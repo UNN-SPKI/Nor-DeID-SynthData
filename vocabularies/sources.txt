@@ -1,0 +1,23 @@
+nb_given_names.csv
+----
+Lists given names used by 200 or more people in Norway
+Source: Statistisk sentralbyrå
+Table 10501: Personer, etter fornavn, statistikkvariabel og år
+Names from 2013 to 2022
+Retrieved 03.07.2023
+
+nb_family_names.csv
+----
+Lists family names used by 200 or more people in Norway
+Source: Statistisk sentralbyrå
+Table 12891: Etternavn brukt av 200 personer eller flere, etter etternavn, statistikkvariabel og år
+Names from 2018 to 2022
+Retrieved 03.07.2023
+
+nb_health_care_units.csv
+----
+Lists healthcare providers that are part of, or have agreements with the national healthcare service in Norway
+Source: Helsenorge.no
+Provider name retrieved from the "name" field from
+https://tjenester.helsenorge.no/proxy/VelgBehandlingssted/api/v1/Behandlingssteder
+Retrieved 03.07.2023
