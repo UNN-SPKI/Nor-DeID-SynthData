@@ -3,13 +3,14 @@ generate.py
 
 
 """
+import json
 import os
 import logging
 import pathlib
 import random
 import datetime
 
-from dataclasses import dataclass
+import dataclasses
 from typing import List
 
 from tap import Tap
@@ -20,14 +21,18 @@ OPENAI_PLACEHOLDER = 'OPENAI-KEY-HERE'
 
 class Arguments(Tap):
     openAIKey: str = OPENAI_PLACEHOLDER
-    dryRun: bool = True
+    dryRun: bool = False
     n: int = 10
     model: str = 'gpt-3.5-turbo'
     locale: str = 'nb'
     seed: int = 42
+    verbose: bool = False
+    output: str = 'results.json'
+    temperature: float = 1.0
+    topP: float = 1.0
+    max_tokens: int = 512
 
-
-@dataclass
+@dataclasses.dataclass
 class Scenario:
     givenName: str
     familyName: str
@@ -42,6 +47,10 @@ class Scenario:
 
 
 def main(args: Arguments):
+    if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
+        logging.debug(f"Running with arguments {args}")
+
     random.seed(args.seed)
     if args.openAIKey == OPENAI_PLACEHOLDER and os.getenv('OPENAI_API_KEY') is None:
         logging.warning(
@@ -51,11 +60,23 @@ def main(args: Arguments):
     if args.dryRun:
         logging.warning(
             "In dry-run mode, will not send any queries to OpenAI.")
-
+    
+    
+    logging.info(f"Creating {args.n} test cases.")
     scenarios = create_scenarios(args.n, args.locale)
-    formatted_scenarios = [format_scenario(scenario) for scenario in scenarios]
-    for s in formatted_scenarios:
-        print(s)
+
+    logging.info("Formatting test cases as prompts.")
+    prompts = [format_scenario(scenario) for scenario in scenarios]
+
+    logging.info("Sending prompts to completion.")
+    completed_notes = [complete_note(prompt, args)
+                       for prompt in prompts]
+    
+    logging.info(f"Writing results to {args.output}")
+    
+    with open(args.output, 'w', encoding='utf8') as result_file:
+        results = {'scenarios': [dataclasses.asdict(s) for s in scenarios], 'prompts': prompts, 'results': completed_notes}
+        json.dump(results, result_file)
 
 
 def sample_lines(filename: pathlib.Path, n: int = 1):
@@ -66,7 +87,7 @@ def sample_lines(filename: pathlib.Path, n: int = 1):
     if n > num_lines:
         raise ValueError(
             f"The file {filename} only has {num_lines} lines but we requested {n} unique choices.")
-    
+
     stripped_lines = [line.strip() for line in lines]
     return random.sample(stripped_lines, n)
 
@@ -74,7 +95,7 @@ def sample_lines(filename: pathlib.Path, n: int = 1):
 def sample_with_replacement(filename: pathlib.Path, n: int = 1):
     with open(filename, 'r', encoding='utf8') as file:
         lines = file.readlines()
-    
+
     stripped_lines = [line.strip() for line in lines]
     return random.choices(stripped_lines, k=n)
 
@@ -111,7 +132,7 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
     today = datetime.date.today()
 
     # Not strictly correct, doesn't take leap years into account
-    ages = [(b - today).days // 365 for b in birth_dates]
+    ages = [(today - b).days // 365 for b in birth_dates]
 
     start_admissions, end_admissions = datetime.date(
         2012, 1, 1), datetime.date(2023, 1, 1)
@@ -156,6 +177,24 @@ Do not add any other tags.
 
 Epikrise:
 """
+
+
+def complete_note(prompt: str, args: Arguments) -> str:
+    if args.dryRun:
+        logging.debug("Not forwarding to OpenAI.")
+        return ""
+
+    if os.getenv('OPENAI_API_KEY') is None:
+        openai.api_key = args.openAIKey
+
+    completion = openai.ChatCompletion.create(
+        model=args.model,
+        messages=[{'role': 'user', 'content': prompt}],
+        max_tokens=args.max_tokens,
+        temperature=args.temperature,
+        top_p=args.topP)
+    answer = completion.choices[0].message.content
+    return answer
 
 
 if __name__ == '__main__':
