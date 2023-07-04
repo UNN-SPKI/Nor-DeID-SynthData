@@ -30,7 +30,7 @@ class Arguments(Tap):
     output: str = 'results.json'
     temperature: float = 1.0
     topP: float = 1.0
-    max_tokens: int = 512
+    max_tokens: int = 1024
 
 @dataclasses.dataclass
 class Scenario:
@@ -75,8 +75,9 @@ def main(args: Arguments):
     logging.info(f"Writing results to {args.output}")
     
     with open(args.output, 'w', encoding='utf8') as result_file:
-        results = {'scenarios': [dataclasses.asdict(s) for s in scenarios], 'prompts': prompts, 'results': completed_notes}
-        json.dump(results, result_file)
+        args.openAIKey = OPENAI_PLACEHOLDER
+        results = {'parameters': args.as_dict(), 'scenarios': [dataclasses.asdict(s) for s in scenarios], 'prompts': prompts, 'results': completed_notes}
+        json.dump(results, result_file, ensure_ascii=False)
 
 
 def sample_lines(filename: pathlib.Path, n: int = 1):
@@ -131,7 +132,8 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
     written_birth_dates = [b.strftime("%B %d. %Y") for b in birth_dates]
     today = datetime.date.today()
 
-    # Not strictly correct, doesn't take leap years into account
+    # Not correct, doesn't take leap years into account
+    # but should be OK for the purposes of testing deidentification
     ages = [(today - b).days // 365 for b in birth_dates]
 
     start_admissions, end_admissions = datetime.date(
@@ -160,6 +162,7 @@ def format_scenario(scenario: Scenario) -> str:
     return f"""
 Write a discharge summary in Norwegian for a patient named {scenario.givenName} {scenario.familyName}, who has been diagnosed with {scenario.diagnosis}.
 Additionally, include the following information:
+- The patient is {scenario.age} years old.
 - The patient was admitted to {scenario.healthCareUnit} on {scenario.admissionDate}.
 - The patient was born in {scenario.city} on {scenario.birthDate}.
 - The patient's phone number is {scenario.phoneNumber}.
