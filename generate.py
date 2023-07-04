@@ -5,8 +5,12 @@ generate.py
 """
 import os
 import logging
+import pathlib
+import random
+import datetime
 
 from dataclasses import dataclass
+from typing import List
 
 from tap import Tap
 import openai
@@ -19,6 +23,8 @@ class Arguments(Tap):
     dryRun: bool = True
     n: int = 10
     model: str = 'gpt-3.5-turbo'
+    locale: str = 'nb'
+    seed: int = 42
 
 
 @dataclass
@@ -35,11 +41,98 @@ class Scenario:
     socialSecurityNumber: str
 
 
-def create_scenario() -> Scenario:
-    return Scenario(givenName="Ola", familyName="Nordmann", age=45, phoneNumber="12345678",
-                    city="Oslo", healthCareUnit="OUS", diagnosis="diabetes", 
-                    birthDate="September 8th 1967", admissionDate="June 23rd 2023", 
-                    socialSecurityNumber="15076500565")
+def main(args: Arguments):
+    random.seed(args.seed)
+    if args.openAIKey == OPENAI_PLACEHOLDER and os.getenv('OPENAI_API_KEY') is None:
+        logging.warning(
+            "Could not find OpenAI API key, running in dry-run mode.")
+        args.dryRun = True
+
+    if args.dryRun:
+        logging.warning(
+            "In dry-run mode, will not send any queries to OpenAI.")
+
+    scenarios = create_scenarios(args.n, args.locale)
+    formatted_scenarios = [format_scenario(scenario) for scenario in scenarios]
+    for s in formatted_scenarios:
+        print(s)
+
+
+def sample_lines(filename: pathlib.Path, n: int = 1):
+    with open(filename, 'r', encoding='utf8') as file:
+        lines = file.readlines()
+
+    num_lines = len(lines)
+    if n > num_lines:
+        raise ValueError(
+            f"The file {filename} only has {num_lines} lines but we requested {n} unique choices.")
+    
+    stripped_lines = [line.strip() for line in lines]
+    return random.sample(stripped_lines, n)
+
+
+def sample_with_replacement(filename: pathlib.Path, n: int = 1):
+    with open(filename, 'r', encoding='utf8') as file:
+        lines = file.readlines()
+    
+    stripped_lines = [line.strip() for line in lines]
+    return random.choices(stripped_lines, k=n)
+
+
+def generate_random_date(start_date: datetime.date, end_date: datetime.date) -> str:
+    random_days = random.randint(0, (end_date - start_date).days)
+    random_date = start_date + datetime.timedelta(days=random_days)
+
+    return random_date
+
+
+def generate_random_phone(locale: str) -> str:
+    phone = str(random.randint(0, 1e8-1)).zfill(8)
+    return random.choice([phone, f'0047{phone}', f'+47{phone}'])
+
+
+def generate_random_ssn(locale: str) -> str:
+    ssn = str(random.randint(0, 1e11-1)).zfill(11)
+    return random.choice([ssn, f'{ssn[0:6]} {ssn[6:]}'])
+
+
+def create_scenarios(n: int, locale: str) -> List[Scenario]:
+    given_names = sample_lines('vocabularies/nb_given_names.csv', n)
+    family_names = sample_lines('vocabularies/nb_family_names.csv', n)
+    diagnoses = sample_lines('vocabularies/en_diagnoses.csv', n)
+    healthcare_units = sample_with_replacement(
+        'vocabularies/nb_healthcare_units.csv', n)
+
+    start_births, end_births = datetime.date(
+        1943, 1, 1), datetime.date(2010, 1, 1)
+    birth_dates = [generate_random_date(
+        start_births, end_births) for _ in range(n)]
+    written_birth_dates = [b.strftime("%B %d. %Y") for b in birth_dates]
+    today = datetime.date.today()
+
+    # Not strictly correct, doesn't take leap years into account
+    ages = [(b - today).days // 365 for b in birth_dates]
+
+    start_admissions, end_admissions = datetime.date(
+        2012, 1, 1), datetime.date(2023, 1, 1)
+    admission_dates = [generate_random_date(
+        start_admissions, end_admissions) for _ in range(n)]
+    written_admissions = [b.strftime("%B %d. %Y") for b in admission_dates]
+    phone_numbers = [generate_random_phone(locale) for _ in range(n)]
+
+    ssns = [generate_random_ssn(locale) for _ in range(n)]
+
+    return [Scenario(givenName=given_names[i],
+                     familyName=family_names[i],
+                     age=ages[i],
+                     phoneNumber=phone_numbers[i],
+                     city="Oslo",
+                     healthCareUnit=healthcare_units[i],
+                     diagnosis=diagnoses[i],
+                     birthDate=written_birth_dates[i],
+                     admissionDate=written_admissions[i],
+                     socialSecurityNumber=ssns[i])
+            for i in range(n)]
 
 
 def format_scenario(scenario: Scenario) -> str:
@@ -64,21 +157,6 @@ Do not add any other tags.
 Epikrise:
 """
 
-
-def main(args: Arguments):
-    if args.openAIKey == OPENAI_PLACEHOLDER and os.getenv('OPENAI_API_KEY') is None:
-        logging.warning(
-            "Could not find OpenAI API key, running in dry-run mode.")
-        args.dryRun = True
-
-    if args.dryRun:
-        logging.warning(
-            "In dry-run mode, will not send any queries to OpenAI.")
-    
-    scenarios = [create_scenario() for _ in range(args.n)]
-    formatted_scenarios = [format_scenario(scenario) for scenario in scenarios]
-    for s in formatted_scenarios:
-        print(s)
 
 if __name__ == '__main__':
     args = Arguments()
