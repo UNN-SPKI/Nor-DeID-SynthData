@@ -11,7 +11,7 @@ import random
 import datetime
 
 import dataclasses
-from typing import List
+from typing import List, Literal
 
 from tap import Tap
 import openai
@@ -21,16 +21,27 @@ OPENAI_PLACEHOLDER = 'OPENAI-KEY-HERE'
 
 class Arguments(Tap):
     openAIKey: str = OPENAI_PLACEHOLDER
+    """The API key to OpenAI"""
     dryRun: bool = False
+    """If set, does not issue any requests to OpenAI"""
     n: int = 10
+    """The number of records to generate"""
     model: str = 'gpt-3.5-turbo'
-    locale: str = 'nb'
+    """Which OpenAI model to prompt"""
+    locale: Literal['nb', 'en'] = 'nb'
+    """Which language to fetch vocabularies from and generate summaries in"""
     seed: int = 42
+    """The seed for the random generator (note: must set --n the same to get same prompts)"""
     verbose: bool = False
+    """Whether to output debugging information"""
     output: str = 'results.json'
+    """Which file to output results to"""
     temperature: float = 1.0
+    """The model temperature (set to 0.0 to get mostly deterministic responses)"""
     topP: float = 1.0
+    """Top-p for model sampling"""
     max_tokens: int = 1024
+    """The upper bound on tokens to output for each document"""
 
 @dataclasses.dataclass
 class Scenario:
