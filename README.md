@@ -29,3 +29,6 @@ You can get a list of arguments with `-h`:
 
 `(venv) $ python generate.py -h`
 
+To create a CSV dataset, call `convert.py` with `--format` set to the format you want, and `--output` pointing to the file or directory the converted documents should be stored in:
+
+`(venv) $ python convert.py --input results.json --output results.csv --format csv`
