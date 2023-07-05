@@ -22,18 +22,27 @@ Provider name retrieved from the "name" field from
 https://tjenester.helsenorge.no/proxy/VelgBehandlingssted/api/v1/Behandlingssteder
 Retrieved 03.07.2023
 
-nb_diagnoses.csv
+nb_diagnoses_full_icd10.csv
 ----
-Lists the full-length Norwegian names of diagnoses in the 2023 revision of ICD-10
+Lists the full-length Norwegian names of diagnosis codes in the 2023 revision of ICD-10
 Source: Direktoratet for e-helse
 Diagnosis names from the "Tekst uten lengdebegrensning" field in 
 https://www.ehelse.no/kodeverk-og-terminologi/ICD-10-og-ICD-11
 Retrieved 04.07.2023
 
-en_diagnoses.csv
+en_diagnoses_full_icd10.csv
 ----
-Lists the full-length English names of diagnoses in the 2023 revision of ICD-10
+Lists the full-length English names of diagnosis codes in the 2023 revision of ICD-10
 Source: Centers for Disease Control and Prevention
 ICD-10-CM FY 2023 April 1 2023 List of codes and Descriptions
 https://www.cdc.gov/nchs/icd/Comprehensive-Listing-of-ICD-10-CM-Files.htm
 Retrieved 04.07.2023
+
+en_diagnoses.csv
+----
+Lists a subset of ICD-10 diagnosis code names from internal medicine 
+Source: Centers for Medicare & Medicaid Services 
+Clinical Concepts - Internal Medicine
+"Unspecified" codes removed
+https://www.cms.gov/medicare/coding/icd10/downloads/icd10clinicalconceptsinternalmedicine1.pdf
+Retrieved 05.07.2023

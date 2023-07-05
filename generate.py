@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
 """
 generate.py
 
-
+Call OpenAI's chat completion to generate synthetic discharge summaries in English and Norwegian with annotated PHI
 """
 import json
 import os
@@ -88,7 +89,7 @@ def main(args: Arguments):
     with open(args.output, 'w', encoding='utf8') as result_file:
         args.openAIKey = OPENAI_PLACEHOLDER
         results = {'parameters': args.as_dict(), 'scenarios': [dataclasses.asdict(s) for s in scenarios], 'prompts': prompts, 'results': completed_notes}
-        json.dump(results, result_file, ensure_ascii=False)
+        json.dump(results, result_file)
 
 
 def sample_lines(filename: pathlib.Path, n: int = 1):
@@ -132,7 +133,7 @@ def generate_random_ssn(locale: str) -> str:
 def create_scenarios(n: int, locale: str) -> List[Scenario]:
     given_names = sample_lines('vocabularies/nb_given_names.csv', n)
     family_names = sample_lines('vocabularies/nb_family_names.csv', n)
-    diagnoses = sample_lines('vocabularies/en_diagnoses.csv', n)
+    diagnoses = sample_with_replacement('vocabularies/en_diagnoses.csv', n)
     healthcare_units = sample_with_replacement(
         'vocabularies/nb_healthcare_units.csv', n)
 
@@ -195,7 +196,6 @@ Epikrise:
 
 def complete_note(prompt: str, args: Arguments) -> str:
     if args.dryRun:
-        logging.debug("Not forwarding to OpenAI.")
         return ""
 
     if os.getenv('OPENAI_API_KEY') is None:
