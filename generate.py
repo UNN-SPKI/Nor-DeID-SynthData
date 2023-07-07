@@ -4,6 +4,7 @@ generate.py
 
 Call OpenAI's chat completion to generate synthetic discharge summaries in English and Norwegian with annotated PHI
 """
+import csv
 import json
 import os
 import logging
@@ -12,7 +13,7 @@ import random
 import datetime
 
 import dataclasses
-from typing import List, Literal
+from typing import List, Literal, Tuple
 
 from tap import Tap
 import openai
@@ -46,6 +47,9 @@ class Arguments(Tap):
 
 @dataclasses.dataclass
 class Scenario:
+    locale: str
+    noteType: str
+    translatedNoteType: str
     givenName: str
     familyName: str
     age: int
@@ -112,6 +116,13 @@ def sample_with_replacement(filename: pathlib.Path, n: int = 1):
     stripped_lines = [line.strip() for line in lines]
     return random.choices(stripped_lines, k=n)
 
+def sample_document_types(filename: pathlib.Path, task_locale: str, title_locale: str, n: int = 1) -> List[Tuple[str, str]]:
+    with open(filename, 'r', encoding='utf8') as file:
+        reader = csv.DictReader(file)
+        records = list(reader)
+    
+    random_types = random.choices(records, k=n)
+    return [(r[task_locale], r[title_locale]) for r in random_types]
 
 def generate_random_date(start_date: datetime.date, end_date: datetime.date) -> str:
     random_days = random.randint(0, (end_date - start_date).days)
@@ -131,6 +142,7 @@ def generate_random_ssn(locale: str) -> str:
 
 
 def create_scenarios(n: int, locale: str) -> List[Scenario]:
+    document_types = sample_document_types('vocabularies/document_types.csv', 'en', args.locale, n)
     given_names = sample_lines('vocabularies/nb_given_names.csv', n)
     family_names = sample_lines('vocabularies/nb_family_names.csv', n)
     diagnoses = sample_with_replacement('vocabularies/en_diagnoses.csv', n)
@@ -157,7 +169,10 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
 
     ssns = [generate_random_ssn(locale) for _ in range(n)]
 
-    return [Scenario(givenName=given_names[i],
+    return [Scenario(locale=args.locale,
+                     noteType=document_types[i][0],
+                     translatedNoteType=document_types[i][1],
+                     givenName=given_names[i],
                      familyName=family_names[i],
                      age=ages[i],
                      phoneNumber=phone_numbers[i],
@@ -172,7 +187,7 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
 
 def format_scenario(scenario: Scenario) -> str:
     return f"""
-Write a discharge summary in Norwegian for a patient named {scenario.givenName} {scenario.familyName}, who has been diagnosed with {scenario.diagnosis}.
+Write a {scenario.noteType} in Norwegian for a patient named {scenario.givenName} {scenario.familyName}, who has been diagnosed with {scenario.diagnosis.lower()}.
 Additionally, include the following information:
 - The patient is {scenario.age} years old.
 - The patient was admitted to {scenario.healthCareUnit} on {scenario.admissionDate}.
@@ -190,7 +205,7 @@ For every other location in the text, add surrounding <Location> tags.
 For every date in the text, add surrounding <Date> tags.
 Do not add any other tags.
 
-Epikrise:
+{scenario.translatedNoteType.title()}:
 """
 
 
