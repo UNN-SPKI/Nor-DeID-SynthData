@@ -47,19 +47,33 @@ class Arguments(Tap):
 
 @dataclasses.dataclass
 class Scenario:
+    """Scenario contains the parameters used to prompt the language model for a generated note."""
     locale: str
+    """The intended language of the generated note, as a two-letter code ('nb' for Norwegian, 'en' for American English)"""
     noteType: str
+    """The note type (e.g. 'discharge summary')"""
     translatedNoteType: str
+    """The note type translated to the intended language (e.g. 'epikrise')"""
     givenName: str
+    """The given/first name of the patient."""
     familyName: str
+    """The family/surname of the patient."""
     age: int
+    """The age of the patient."""
     phoneNumber: str
+    """The patient's phone number."""
     city: str
+    """The patient's city of residence."""
     healthCareUnit: str
+    """The institution where the patient has been admitted."""
     diagnosis: str
+    """The diagnosis or primary symptoms the patient has been admitted with (as a partial sentence, e.g. [admitted with] 'generalized abdominal pain')"""
     birthDate: str
+    """The date the patient was born."""
     admissionDate: str
+    """The date the patient was admitted."""
     socialSecurityNumber: str
+    """A unique identifier for the patient (the US Social Security Number for English, the fødsels/personnummer for Norwegian)"""
 
 
 def main(args: Arguments):
@@ -132,19 +146,33 @@ def generate_random_date(start_date: datetime.date, end_date: datetime.date) -> 
 
 
 def generate_random_phone(locale: str) -> str:
-    phone = str(random.randint(0, 1e8-1)).zfill(8)
-    return random.choice([phone, f'0047{phone}', f'+47{phone}'])
+    if locale == 'nb':
+        phone = str(random.randint(0, 1e8-1)).zfill(8)
+        return random.choice([phone, f'0047{phone}', f'+47{phone}'])
+    elif locale == 'en':
+        phone = str(random.randint(0, 1e10-1)).zfill(10)
+        return random.choice([phone, f'({phone[0:3]}) {phone[3:7]}-{phone[7:]}', f'+1 ({phone[0:3]}) {phone[3:7]}-{phone[7:]}'])
+    else:
+        raise ValueError(f"Can't generate phone number for locale {args.locale}")
 
 
 def generate_random_ssn(locale: str) -> str:
-    ssn = str(random.randint(0, 1e11-1)).zfill(11)
-    return random.choice([ssn, f'{ssn[0:6]} {ssn[6:]}'])
+    if locale == 'nb':
+        ssn = str(random.randint(0, 1e11-1)).zfill(11)
+        return random.choice([ssn, f'{ssn[0:6]} {ssn[6:]}'])
+    elif locale == 'en':
+        # Use US SSNs
+        ssn = str(random.randint(0, 1e9-1)).zfill(9)
+        return random.choice([ssn, f'{ssn[0:3]}-{ssn[3:5]}-{ssn[5:]}', f'{ssn[0:3]} {ssn[3:5]} {ssn[5:]}'])
+    else:
+        raise ValueError(f"Can't generate SSN for locale {args.locale}")
 
 
 def create_scenarios(n: int, locale: str) -> List[Scenario]:
     document_types = sample_document_types('vocabularies/document_types.csv', 'en', args.locale, n)
     given_names = sample_lines('vocabularies/nb_given_names.csv', n)
     family_names = sample_lines('vocabularies/nb_family_names.csv', n)
+    cities = sample_lines('vocabularies/nb_cities.csv', n)
     diagnoses = sample_with_replacement('vocabularies/en_diagnoses.csv', n)
     healthcare_units = sample_with_replacement(
         'vocabularies/nb_healthcare_units.csv', n)
@@ -176,7 +204,7 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
                      familyName=family_names[i],
                      age=ages[i],
                      phoneNumber=phone_numbers[i],
-                     city="Oslo",
+                     city=cities[i],
                      healthCareUnit=healthcare_units[i],
                      diagnosis=diagnoses[i],
                      birthDate=written_birth_dates[i],
@@ -186,8 +214,13 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
 
 
 def format_scenario(scenario: Scenario) -> str:
+    lang_name = {'en': 'English', 'nb': 'Norwegian'}
+    if scenario.locale not in lang_name:
+        raise ValueError(f"Unknown locale {args.locale}")
+    
+    language = lang_name[scenario.locale]
     return f"""
-Write a {scenario.noteType} in Norwegian for a patient named {scenario.givenName} {scenario.familyName}, who has been diagnosed with {scenario.diagnosis.lower()}.
+Write a {scenario.noteType} in {language} for a patient named {scenario.givenName} {scenario.familyName}, who has been diagnosed with {scenario.diagnosis.lower()}.
 Additionally, include the following information:
 - The patient is {scenario.age} years old.
 - The patient was admitted to {scenario.healthCareUnit} on {scenario.admissionDate}.

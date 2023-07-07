@@ -46,3 +46,11 @@ Clinical Concepts - Internal Medicine
 "Unspecified" codes removed
 https://www.cms.gov/medicare/coding/icd10/downloads/icd10clinicalconceptsinternalmedicine1.pdf
 Retrieved 05.07.2023
+
+nb_cities.csv
+----
+Towns and cities in Norway
+Source: Statistisk sentralbyrå
+05277: Folkemengde, etter region, statistikkvariabel og år
+Cities registered in 2022
+Retrieved 07.07.2023
