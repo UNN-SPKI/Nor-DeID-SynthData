@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pathlib
 import json
 from typing import Literal
@@ -10,7 +11,7 @@ class Arguments(Tap):
     """The JSON file with annotated notes to convert to a specific format."""
     output: pathlib.Path = 'results.csv'
     """The filename or directory to write converted documents to."""
-    format: Literal['csv'] = 'csv'
+    format: Literal['csv', 'xml'] = 'csv'
     """The format to convert notes to."""
 
 def main(args: Arguments):
@@ -19,6 +20,8 @@ def main(args: Arguments):
     
     if args.format == 'csv':
         create_csv(source, args.output, args)
+    elif args.format == 'xml':
+        create_xml(source, args.output, args)
     else:
         raise ValueError(f"Unrecognized format '{args.format}'")
 
@@ -30,6 +33,16 @@ def create_csv(source, output_path: pathlib.Path, args: Arguments):
             source_text = utilities.tags.remove_tags(r).replace('\n', ' ')
             target_text = utilities.tags.redact_tags(r).replace('\n', ' ')
             output.write(f'"{source_text}","{target_text}"\n')
+
+def create_xml(source, output_path: pathlib.Path, args: Arguments):
+    with open(output_path, 'w', encoding='utf8') as output:
+        output.write('<?xml version="1.0" encoding="UTF-8"?>')
+        results = source['results']
+        for i, r in enumerate(results):
+            output.write(f"<record id='{i}'>")
+            output.write(r)
+            output.write(f"</record>")
+
 
 if __name__ == '__main__':
     args = Arguments()
