@@ -19,7 +19,9 @@ from tap import Tap
 import openai
 
 OPENAI_PLACEHOLDER = 'OPENAI-KEY-HERE'
-
+SYSTEM_PROMPT = """
+Answer in the form of an annotated discharge note from a specialist. Include details about each finding.
+"""
 
 class Arguments(Tap):
     openAIKey: str = OPENAI_PLACEHOLDER
@@ -74,6 +76,8 @@ class Scenario:
     """The date the patient was admitted."""
     socialSecurityNumber: str
     """A unique identifier for the patient (the US Social Security Number for English, the fødsels/personnummer for Norwegian)"""
+    findings: list[str]
+    """Clinical observations to include"""
 
 
 def main(args: Arguments):
@@ -166,7 +170,14 @@ def generate_random_ssn(locale: str) -> str:
         return random.choice([ssn, f'{ssn[0:3]}-{ssn[3:5]}-{ssn[5:]}', f'{ssn[0:3]} {ssn[3:5]} {ssn[5:]}'])
     else:
         raise ValueError(f"Can't generate SSN for locale {args.locale}")
-
+    
+def sample_findings(findings_source, n: int, locale: str) -> list[list[str]]:
+    patient_findings = []
+    for _ in range(n):
+        finding_list = [random.choice(findings_source[v]) for v in findings_source.keys()]
+        random.shuffle(finding_list)
+        patient_findings.append(finding_list)
+    return patient_findings
 
 def create_scenarios(n: int, locale: str) -> List[Scenario]:
     document_types = sample_document_types('vocabularies/document_types.csv', 'en', args.locale, n)
@@ -176,6 +187,8 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
     diagnoses = sample_with_replacement('vocabularies/en_diagnoses.csv', n)
     healthcare_units = sample_with_replacement(
         'vocabularies/nb_healthcare_units.csv', n)
+    with open('vocabularies/en_findings.json', 'r') as findings_file:
+        findings_source = json.load(findings_file)
 
     start_births, end_births = datetime.date(
         1943, 1, 1), datetime.date(2010, 1, 1)
@@ -197,6 +210,8 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
 
     ssns = [generate_random_ssn(locale) for _ in range(n)]
 
+    findings = sample_findings(findings_source, n, locale)
+
     return [Scenario(locale=args.locale,
                      noteType=document_types[i][0],
                      translatedNoteType=document_types[i][1],
@@ -209,7 +224,8 @@ def create_scenarios(n: int, locale: str) -> List[Scenario]:
                      diagnosis=diagnoses[i],
                      birthDate=written_birth_dates[i],
                      admissionDate=written_admissions[i],
-                     socialSecurityNumber=ssns[i])
+                     socialSecurityNumber=ssns[i],
+                     findings=findings[i])
             for i in range(n)]
 
 
@@ -219,8 +235,10 @@ def format_scenario(scenario: Scenario) -> str:
         raise ValueError(f"Unknown locale {args.locale}")
     
     language = lang_name[scenario.locale]
+    formatted_findings = ', '.join(scenario.findings)
     return f"""
-Write a {scenario.noteType} in {language} for a patient named {scenario.givenName} {scenario.familyName}, who has been diagnosed with {scenario.diagnosis.lower()}.
+Write a {scenario.noteType} in {language} for a patient named {scenario.givenName} {scenario.familyName}, who has been admitted with the primary diagnosis code \"{scenario.diagnosis}\".
+It should explain that at the time of admission, the patient had {formatted_findings}.
 Additionally, include the following information:
 - The patient is {scenario.age} years old.
 - The patient was admitted to {scenario.healthCareUnit} on {scenario.admissionDate}.
@@ -238,7 +256,6 @@ For every other location in the text, add surrounding <Location> tags.
 For every date in the text, add surrounding <Date> tags.
 Do not add any other tags.
 
-{scenario.translatedNoteType.title()}:
 """
 
 
@@ -251,7 +268,10 @@ def complete_note(prompt: str, args: Arguments) -> str:
 
     completion = openai.ChatCompletion.create(
         model=args.model,
-        messages=[{'role': 'user', 'content': prompt}],
+        messages=[
+            {'role': 'system', 'content': SYSTEM_PROMPT},
+            {'role': 'user', 'content': prompt}
+            ],
         max_tokens=args.max_tokens,
         temperature=args.temperature,
         top_p=args.topP)

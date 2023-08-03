@@ -1,0 +1,41 @@
+{
+    "mobility": [
+        "full mobility",
+        "reduced mobility",
+        "little mobility"
+    ],
+    "hydration": [
+        "no signs of dehydration",
+        "some signs of dehydration",
+        "clear signs of dehydration"
+    ],
+    "pulse": [
+        "regular pulse",
+        "slow pulse",
+        "quick pulse",
+        "slowed heart rate",
+        "elevated heart rate"
+    ],
+    "blood pressure": [
+        "ordinary blood pressure",
+        "elevated blood pressure",
+        "high blood pressure",
+        "low blood pressure"
+    ],
+    "respiration": [
+        "regular breathing",
+        "shallow breathing",
+        "slow breathing"
+    ],
+    "temperature": [
+        "ordinary body temperature",
+        "elevated core temperature",
+        "low core temperature"
+    ],
+    "pain": [
+        "no pain",
+        "light pain",
+        "moderate pain",
+        "severe pain"
+    ]
+}

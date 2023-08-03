@@ -161,3 +161,4 @@ cython_debug/
 
 results.csv
 results.json
+results.xml
