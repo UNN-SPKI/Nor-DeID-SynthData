@@ -817,7 +817,7 @@
         "end": 216,
         "text": "Sykehuset Innlandet, DPS Elverum-Hamar, poliklinikk Hamar",
         "labels": [
-          "Location"
+          "Health_Care_Unit"
         ]
       },
       {
@@ -832,8 +832,8 @@
     "annotator": 1,
     "annotation_id": 10,
     "created_at": "2023-08-15T09:09:45.913626Z",
-    "updated_at": "2023-08-15T09:09:45.913658Z",
-    "lead_time": 65.904
+    "updated_at": "2023-08-16T07:57:28.517412Z",
+    "lead_time": 93.365
   },
   {
     "text": "Klinisk utskrivningsrecord for pasient Grzegorz Nævdal\n\nPrimær diagnose: T24712D - Korrosjon av tredje grad på venstre lår.\n\nPasientinformasjon:\nAlder: 43 år\nFødt: 05. august 1980 i Pollestad.\nTelefonnummer: +4795432326\nPersonnummer: 53002137306\n\nInnleggelsesdetaljer:\nPasienten ble innlagt på Sykehuset Innlandet, DPS Gjøvik, poliklinikk Valdres den 29. august 2020.\n\nTilstand ved innleggelse:\n- Moderat smerte\n- Normalt blodtrykk\n- Regelmessig puls\n- Noen tegn på dehydrering\n- Lav kjerne temperatur \n- Full mobilitet\n- Overflate pust\n\nVed utskrivning anbefales det at pasienten tar kontakt med fastlege ved forverring av tilstanden.",
@@ -901,7 +901,7 @@
         "end": 346,
         "text": "Sykehuset Innlandet, DPS Gjøvik, poliklinikk Valdres",
         "labels": [
-          "Location"
+          "Health_Care_Unit"
         ]
       },
       {
@@ -916,8 +916,8 @@
     "annotator": 1,
     "annotation_id": 11,
     "created_at": "2023-08-15T09:10:37.658133Z",
-    "updated_at": "2023-08-15T09:10:37.658163Z",
-    "lead_time": 50.452
+    "updated_at": "2023-08-16T07:58:04.814937Z",
+    "lead_time": 54.852
   },
   {
     "text": "Epikrise\n\nPasient: Yosef Ulset\nFødt: 06.10.1948\nFødselssted: Rødberg\nTelefonnummer: 004760552159\nPersonnummer: 72328710464\nAlder: 74 år gammel\nInnlagt: Helse Møre og Romsdal, Molde behandlingssenter den 09.04.2022\n\nPrimær diagnose ved innleggelse: G2581 Urolige ben syndrom \n\nFunn ved innleggelse inkluderte høyt blodtrykk, moderat smerte, økt kroppstemperatur, langsom puls, lite mobilitet, jevnlig pust og klare tegn på dehydrering. Anbefalte tiltak ved utskrivning inkluderer fortsatt overvåking av blodtrykk, smertekontroll, hydrering og råd om økt fysisk aktivitet etter behov og evne, samt oppfølging med primærhelsetjenesten.",
@@ -1269,7 +1269,7 @@
         "end": 182,
         "text": "Ringen Rehabiliteringssenter",
         "labels": [
-          "Location"
+          "Health_Care_Unit"
         ]
       },
       {
@@ -1284,8 +1284,8 @@
     "annotator": 1,
     "annotation_id": 15,
     "created_at": "2023-08-15T09:15:57.375531Z",
-    "updated_at": "2023-08-15T09:15:57.375561Z",
-    "lead_time": 50.145
+    "updated_at": "2023-08-16T07:59:20.393568Z",
+    "lead_time": 56.222
   },
   {
     "text": "Utskrivningsnotat\n\nPasient: Fredrick Takvam\nFødselsdato: 20. mai 1976\nFødested: Moltustranda\n\nFredrick ble innlagt på Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg den 13. mai 2016 med hoveddiagnosekoden \"S72351G Displaced comminuted fracture of shaft of right femur\". Ved innleggelsen hadde Fredrick ingen smerter, overfladisk pust, forhøyet blodtrykk, vanlig kroppstemperatur, redusert pustetakt, redusert mobilitet, ingen tegn til dehydrering.\n\nPasientopplysninger:\nAlder: 47 år\nTelefonnummer: +4769084433\nPersonnummer: 072639 47834\n\nAvslutning av behandling:\nFredrick har fått adekvat behandling for sin tilstand. Han vil trenge kontinuerlig rehabilitering og fysioterapi for å gjenopprette fulle funksjoner i det berørte området. \n\nMed vennlig hilsen,\n[Lege Navn]\nSpesialist\nSykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg\n",
@@ -1379,13 +1379,21 @@
         "labels": [
           "First_Name"
         ]
+      },
+      {
+        "start": 194,
+        "end": 206,
+        "text": "13. mai 2016",
+        "labels": [
+          "Date"
+        ]
       }
     ],
     "annotator": 1,
     "annotation_id": 16,
     "created_at": "2023-08-15T09:17:03.210938Z",
-    "updated_at": "2023-08-15T09:17:03.210969Z",
-    "lead_time": 64.57
+    "updated_at": "2023-08-16T08:43:32.792056Z",
+    "lead_time": 74.204
   },
   {
     "text": "Utgangsnotat:\n\nPasientnavn: Konstantin Sagmo\nAlder: 20 år\nSykehus: Sykehuset Østfold, Barne- og Ungdomspsykiatrisk poliklinikk Moss\nInnleggelsesdato: 18. februar, 2016\nFødselsdato: 30. desember, 2002\nFødested: Aulifeltet\nTelefonnummer: 004718437690\nPersonnummer: 638302 88132\n\nPrimærdiagnose: M71421 kalsiumavleiring i bursa\n\nVed innleggelsen hadde pasienten forhøyet kjerne temperatur, langsom pust, senket hjertefrekvens, forhøyet blodtrykk, ingen smerte, noen tegn på dehydrering, full mobilitet.\n\nKommentarer:\nKonstantin viser noen tegn på dehydrering, som krever hydrering via IV. Ellers er hans vitale tegn stabile, og han har full mobilitet. Han har ingen smerte, noe som er et godt tegn. Vi vil opprettholde vanlig oppfølging og justere behandlingsplanen som nødvendig. Pasienten er samarbeidsvillig og viser vilje til å samarbeide om behandlingsplanen.",
