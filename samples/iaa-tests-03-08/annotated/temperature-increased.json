@@ -1,0 +1,1850 @@
+[
+  {
+    "text": "Utskrivningsbrev fra Spesialist:\n\nInnleggingshistorikk:\n\nPasient: Yahya Hval\nFødt: 18. desember 1945\nAdresse: Gangstadhaugen\nTelefonnummer: 69404455\nPersonnummer: 34758555652\nAlder: 77 år \n\nHenvist fra: Sykehuset i Vestfold HF, Psykisk helse - voksne, Tønsberg - Granli \nInnleggingsdato: 22. august 2012\n\nDiagnose ved innleggelse: \nHoveddiagnose kode I1311 Hypertensiv hjerte- og kronisk nyresykdom uten hjertesvikt.\n\nVed innleggelsestidspunktet hadde pasienten høy blodtrykk, regelmessig puste, tegn på dehydrering, lav kroppstemperatur, alvorlig smerte, full mobilitet, sakte hjertefrekvens.\n\nVennligst opplys oss om endringer i tilstanden til Yahya Hval.",
+    "original_text": "Utskrivningsbrev fra Spesialist:\n\nInnleggingshistorikk:\n\nPasient: <First_Name>Yahya<\/First_Name> <Last_Name>Hval<\/Last_Name>\nFødt: <Date>18. desember 1945<\/Date>\nAdresse: <Location>Gangstadhaugen<\/Location>\nTelefonnummer: <Phone_Number>69404455<\/Phone_Number>\nPersonnummer: <Social_Security_Number>34758555652<\/Social_Security_Number>\nAlder: <Age>77<\/Age> år \n\nHenvist fra: <Health_Care_Unit>Sykehuset i Vestfold HF, Psykisk helse - voksne, Tønsberg - Granli<\/Health_Care_Unit> \nInnleggingsdato: <Date>22. august 2012<\/Date>\n\nDiagnose ved innleggelse: \nHoveddiagnose kode I1311 Hypertensiv hjerte- og kronisk nyresykdom uten hjertesvikt.\n\nVed innleggelsestidspunktet hadde pasienten høy blodtrykk, regelmessig puste, tegn på dehydrering, lav kroppstemperatur, alvorlig smerte, full mobilitet, sakte hjertefrekvens.\n\nVennligst opplys oss om endringer i tilstanden til <First_Name>Yahya<\/First_Name> <Last_Name>Hval<\/Last_Name>.",
+    "id": 41,
+    "label": [
+      {
+        "start": 66,
+        "end": 71,
+        "text": "Yahya",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 72,
+        "end": 76,
+        "text": "Hval",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 83,
+        "end": 100,
+        "text": "18. desember 1945",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 110,
+        "end": 124,
+        "text": "Gangstadhaugen",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 140,
+        "end": 148,
+        "text": "69404455",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 163,
+        "end": 174,
+        "text": "34758555652",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 182,
+        "end": 188,
+        "text": "77 år ",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 203,
+        "end": 269,
+        "text": "Sykehuset i Vestfold HF, Psykisk helse - voksne, Tønsberg - Granli",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 288,
+        "end": 303,
+        "text": "22. august 2012",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 646,
+        "end": 651,
+        "text": "Yahya",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 652,
+        "end": 656,
+        "text": "Hval",
+        "labels": [
+          "Last_Name"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 42,
+    "created_at": "2023-08-15T13:00:32.549297Z",
+    "updated_at": "2023-08-15T13:00:32.549332Z",
+    "lead_time": 51.91
+  },
+  {
+    "text": "Helse Møre og Romsdal, DPS Volda \nPasientopplysninger:\nNavn: Amanuel Myre\nFødselsdato: 20. mai 1993\nFødselssted: Fjelldal\nTelefonnummer: 84505847\nPersonnummer: 357429 63630\n\nAmanuel ble innlagt den 2. juli 2020 med hoveddiagnose M85152 Skeletal fluorosis. Ved innleggelsestidspunktet hadde han full mobilitet, lavt blodtrykk, alvorlige smerter, noen tegn på dehydrering, regelmessig puls, vanlig kroppstemperatur, grunn pust. \n\nPasientens alder: 30 år. \n\nVennligst kontakt for ytterligere spørsmål eller for oppfølging.",
+    "original_text": "<Health_Care_Unit>Helse Møre og Romsdal, DPS Volda<\/Health_Care_Unit> \nPasientopplysninger:\nNavn: <First_Name>Amanuel<\/First_Name> <Last_Name>Myre<\/Last_Name>\nFødselsdato: <Date>20. mai 1993<\/Date>\nFødselssted: <Location>Fjelldal<\/Location>\nTelefonnummer: <Phone_Number>84505847<\/Phone_Number>\nPersonnummer: <Social_Security_Number>357429 63630<\/Social_Security_Number>\n\n<First_Name>Amanuel<\/First_Name> ble innlagt den <Date>2. juli 2020<\/Date> med hoveddiagnose M85152 Skeletal fluorosis. Ved innleggelsestidspunktet hadde han full mobilitet, lavt blodtrykk, alvorlige smerter, noen tegn på dehydrering, regelmessig puls, vanlig kroppstemperatur, grunn pust. \n\nPasientens alder: <Age>30<\/Age> år. \n\nVennligst kontakt for ytterligere spørsmål eller for oppfølging.",
+    "id": 42,
+    "label": [
+      {
+        "start": 0,
+        "end": 32,
+        "text": "Helse Møre og Romsdal, DPS Volda",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 61,
+        "end": 68,
+        "text": "Amanuel",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 69,
+        "end": 73,
+        "text": "Myre",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 87,
+        "end": 99,
+        "text": "20. mai 1993",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 113,
+        "end": 121,
+        "text": "Fjelldal",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 137,
+        "end": 145,
+        "text": "84505847",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 160,
+        "end": 172,
+        "text": "357429 63630",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 446,
+        "end": 451,
+        "text": "30 år",
+        "labels": [
+          "Age"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 43,
+    "created_at": "2023-08-15T13:01:13.046410Z",
+    "updated_at": "2023-08-15T13:01:13.046445Z",
+    "lead_time": 39.215
+  },
+  {
+    "text": "Pasientutskrivningsopplysninger\n\nPasientens navn: Arvin Tvedten\nFødselsdato: 14. januar 1973\nFødselssted: Varhaugvika\nTelefonnummer: 004779093844\nFødselsnummer: 10739769144\n\nPasienten ble innlagt på UNN, Narvik Sykehus - Radiologi den 25. oktober 2017 med hoveddiagnosekode \"S06355D Traumatisk blødning i venstre cerebrum med tap av bevissthet i mer enn 24 timer og tilbake til tidligere bevissthetnivå\". \n\nVed innleggelsen hadde Arvin tegn til dehydrering, høyt blodtrykk, redusert bevegelighet, lav kroppstemperatur, høy hjertefrekvens, alvorlig smerte og regelmessig åndedrett. \n\nPasientens tilstand gjennom sykehusoppholdet har varierte, reflekterte hans primære diagnose og ledsaging symptomer. Til tross for perioder med severe discomfort and pain, forble Arvin utholdelig og samarbeidet med sykehuspersonalet.\n\nArvin er nå 50 år gammel. Før utskrivning startet Arvin å vise tegn til gjenoppretting, inkludert stabiliserende vitale tegn, forbedret mobilitet, og redusert smerte. Det er anbefalt at Arvin fortsetter restitusjonsbehandlinger hjemme ogom nødvendig krever ytterligere medisinsk oppfølging.\n",
+    "original_text": "Pasientutskrivningsopplysninger\n\nPasientens navn: <First_Name>Arvin<\/First_Name> <Last_Name>Tvedten<\/Last_Name>\nFødselsdato: <Date>14. januar 1973<\/Date>\nFødselssted: <Location>Varhaugvika<\/Location>\nTelefonnummer: <Phone_Number>004779093844<\/Phone_Number>\nFødselsnummer: <Social_Security_Number>10739769144<\/Social_Security_Number>\n\nPasienten ble innlagt på <Health_Care_Unit>UNN, Narvik Sykehus - Radiologi<\/Health_Care_Unit> den <Date>25. oktober 2017<\/Date> med hoveddiagnosekode \"S06355D Traumatisk blødning i venstre cerebrum med tap av bevissthet i mer enn 24 timer og tilbake til tidligere bevissthetnivå\". \n\nVed innleggelsen hadde <First_Name>Arvin<\/First_Name> tegn til dehydrering, høyt blodtrykk, redusert bevegelighet, lav kroppstemperatur, høy hjertefrekvens, alvorlig smerte og regelmessig åndedrett. \n\nPasientens tilstand gjennom sykehusoppholdet har varierte, reflekterte hans primære diagnose og ledsaging symptomer. Til tross for perioder med severe discomfort and pain, forble <First_Name>Arvin<\/First_Name> utholdelig og samarbeidet med sykehuspersonalet.\n\n<First_Name>Arvin<\/First_Name> er nå <Age>50<\/Age> år gammel. Før utskrivning startet <First_Name>Arvin<\/First_Name> å vise tegn til gjenoppretting, inkludert stabiliserende vitale tegn, forbedret mobilitet, og redusert smerte. Det er anbefalt at <First_Name>Arvin<\/First_Name> fortsetter restitusjonsbehandlinger hjemme ogom nødvendig krever ytterligere medisinsk oppfølging.\n",
+    "id": 43,
+    "label": [
+      {
+        "start": 50,
+        "end": 55,
+        "text": "Arvin",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 56,
+        "end": 63,
+        "text": "Tvedten",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 77,
+        "end": 92,
+        "text": "14. januar 1973",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 106,
+        "end": 117,
+        "text": "Varhaugvika",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 133,
+        "end": 145,
+        "text": "004779093844",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 161,
+        "end": 172,
+        "text": "10739769144",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 199,
+        "end": 230,
+        "text": "UNN, Narvik Sykehus - Radiologi",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 235,
+        "end": 251,
+        "text": "25. oktober 2017",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 430,
+        "end": 435,
+        "text": "Arvin",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 830,
+        "end": 835,
+        "text": "50 år",
+        "labels": [
+          "Age"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 44,
+    "created_at": "2023-08-15T13:02:17.004777Z",
+    "updated_at": "2023-08-15T13:02:17.004830Z",
+    "lead_time": 62.71
+  },
+  {
+    "text": "Innskrivningsrapport for:\n\nPatient: Patrick Marken\nAlder: 43 år\nFødt: 24. februar, 1980 i Mogrenda\n\nPasienten ble innlagt på Aleris Sykehus Solsiden den 05. mai 2016 med hoveddiagnosekoden \"T433X2S Forgiftning av fenotiazin-antipsykotika og nevroleptika\".\n\nTelefonnummer: 58006520\nPersonnummer: 27939324945\n\nPå tidspunktet for innleggelsen hadde pasienten normal kroppstemperatur, senket hjertefrekvens, alvorlig smerte, ingen tegn til dehydrering, lavt blodtrykk, full mobilitet, og langsom pust.\n\nObservasjoner ved innskrivning:\n\n- Normal kroppstemperatur\n- Senket hjertefrekvens\n- Alvorlig smerte\n- Ingen tegn på dehydrering\n- Lavt blodtrykk\n- Full mobilitet\n- Langsom respirasjonsfrekvens. \n\nAlle nødvendige tiltak blir tatt for å håndtere pasientens tilstand og ytterligere undersøkelser vil bli utført basert på pasientens helseutvikling.",
+    "original_text": "Innskrivningsrapport for:\n\nPatient: <First_Name>Patrick<\/First_Name> <Last_Name>Marken<\/Last_Name>\nAlder: <Age>43<\/Age> år\nFødt: <Date>24. februar, 1980<\/Date> i <Location>Mogrenda<\/Location>\n\nPasienten ble innlagt på <Health_Care_Unit>Aleris Sykehus Solsiden<\/Health_Care_Unit> den <Date>05. mai 2016<\/Date> med hoveddiagnosekoden \"T433X2S Forgiftning av fenotiazin-antipsykotika og nevroleptika\".\n\nTelefonnummer: <Phone_Number>58006520<\/Phone_Number>\nPersonnummer: <Social_Security_Number>27939324945<\/Social_Security_Number>\n\nPå tidspunktet for innleggelsen hadde pasienten normal kroppstemperatur, senket hjertefrekvens, alvorlig smerte, ingen tegn til dehydrering, lavt blodtrykk, full mobilitet, og langsom pust.\n\nObservasjoner ved innskrivning:\n\n- Normal kroppstemperatur\n- Senket hjertefrekvens\n- Alvorlig smerte\n- Ingen tegn på dehydrering\n- Lavt blodtrykk\n- Full mobilitet\n- Langsom respirasjonsfrekvens. \n\nAlle nødvendige tiltak blir tatt for å håndtere pasientens tilstand og ytterligere undersøkelser vil bli utført basert på pasientens helseutvikling.",
+    "id": 44,
+    "label": [
+      {
+        "start": 36,
+        "end": 43,
+        "text": "Patrick",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 44,
+        "end": 50,
+        "text": "Marken",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 58,
+        "end": 63,
+        "text": "43 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 70,
+        "end": 87,
+        "text": "24. februar, 1980",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 90,
+        "end": 98,
+        "text": "Mogrenda",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 125,
+        "end": 148,
+        "text": "Aleris Sykehus Solsiden",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 153,
+        "end": 165,
+        "text": "05. mai 2016",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 272,
+        "end": 280,
+        "text": "58006520",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 295,
+        "end": 306,
+        "text": "27939324945",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 45,
+    "created_at": "2023-08-15T13:03:06.351846Z",
+    "updated_at": "2023-08-15T13:03:06.351875Z",
+    "lead_time": 48.097
+  },
+  {
+    "text": "Utskrivningsnotat\n\nPasientens navn: Brynjar Fredheim\n\nFødselsdato: 03. april 1974\n\nFødested: Alternes\n\nAlder: 49 år\n\nTelefonnummer: 99503711\n\nPersonnummer: 35193663373\n\nInnlagt til Sørlandet sykehus, ABUP Arendal den 10. januar 2018 \n\nHoved diagnose: S61551S Åpent bitt på høyre håndledd\n\nVed innleggelsen hadde pasienten moderat smerte, tydelige tegn på dehydrering, lavt blodtrykk, jevn puls, full mobilitet, sakte pust, lav kjerne temperatur.\n\nBrynjar Fredheim ble utskrevet med instruksjoner om å sørge for tilstrekkelig hydrering, overvåke smerte nivået, og komme tilbake til sykehuset hvis noen symptomer forverres eller ikke forbedrer seg.\n",
+    "original_text": "Utskrivningsnotat\n\nPasientens navn: <First_Name>Brynjar<\/First_Name> <Last_Name>Fredheim<\/Last_Name>\n\nFødselsdato: <Date>03. april 1974<\/Date>\n\nFødested: <Location>Alternes<\/Location>\n\nAlder: <Age>49<\/Age> år\n\nTelefonnummer: <Phone_Number>99503711<\/Phone_Number>\n\nPersonnummer: <Social_Security_Number>35193663373<\/Social_Security_Number>\n\nInnlagt til <Health_Care_Unit>Sørlandet sykehus, ABUP Arendal<\/Health_Care_Unit> den <Date>10. januar 2018<\/Date> \n\nHoved diagnose: S61551S Åpent bitt på høyre håndledd\n\nVed innleggelsen hadde pasienten moderat smerte, tydelige tegn på dehydrering, lavt blodtrykk, jevn puls, full mobilitet, sakte pust, lav kjerne temperatur.\n\n<First_Name>Brynjar<\/First_Name> <Last_Name>Fredheim<\/Last_Name> ble utskrevet med instruksjoner om å sørge for tilstrekkelig hydrering, overvåke smerte nivået, og komme tilbake til sykehuset hvis noen symptomer forverres eller ikke forbedrer seg.\n",
+    "id": 45,
+    "label": [
+      {
+        "start": 36,
+        "end": 43,
+        "text": "Brynjar",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 44,
+        "end": 52,
+        "text": "Fredheim\\n\\n",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 67,
+        "end": 81,
+        "text": "03. april 1974",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 93,
+        "end": 101,
+        "text": "Alternes",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 110,
+        "end": 115,
+        "text": "49 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 132,
+        "end": 140,
+        "text": "99503711",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 156,
+        "end": 167,
+        "text": "35193663373",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 181,
+        "end": 212,
+        "text": "Sørlandet sykehus, ABUP Arendal",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 447,
+        "end": 454,
+        "text": "Brynjar",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 455,
+        "end": 463,
+        "text": "Fredheim",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 217,
+        "end": 233,
+        "text": "10. januar 2018\\n\\n",
+        "labels": [
+          "Date"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 46,
+    "created_at": "2023-08-15T13:05:30.620127Z",
+    "updated_at": "2023-08-15T13:05:30.620161Z",
+    "lead_time": 143.023
+  },
+  {
+    "text": "Klinisk innleggelse:\n\nPasient: Bjarne Vanvik (Fødselsnummer: 819698 80465)\nFødested: Hølen\nFødselsdato: 18. Februar 1945\nAlder: 78 år gammel\nTelefonnummer: +4761034247\nInnleggelsesdato: 8. Juni 2015 \nHelseinstitusjon: Unilabs Røntgen Ski\n\nPrimær diagnose: M84571S Patologisk brudd i neoplastisk sykdom\n\nVed innleggelse hadde pasienten intens smerte, normal kroppstemperatur, klare tegn på dehydrering, overfladisk pusting, full mobilitet, høyt blodtrykk, og regelmessig puls.",
+    "original_text": "Klinisk innleggelse:\n\nPasient: <First_Name>Bjarne<\/First_Name> <Last_Name>Vanvik<\/Last_Name> (Fødselsnummer: <Social_Security_Number>819698 80465<\/Social_Security_Number>)\nFødested: <Location>Hølen<\/Location>\nFødselsdato: <Date>18. Februar 1945<\/Date>\nAlder: <Age>78<\/Age> år gammel\nTelefonnummer: <Phone_Number>+4761034247<\/Phone_Number>\nInnleggelsesdato: <Date>8. Juni 2015<\/Date> \nHelseinstitusjon: <Health_Care_Unit>Unilabs Røntgen Ski<\/Health_Care_Unit>\n\nPrimær diagnose: M84571S Patologisk brudd i neoplastisk sykdom\n\nVed innleggelse hadde pasienten intens smerte, normal kroppstemperatur, klare tegn på dehydrering, overfladisk pusting, full mobilitet, høyt blodtrykk, og regelmessig puls.",
+    "id": 46,
+    "label": [
+      {
+        "start": 31,
+        "end": 37,
+        "text": "Bjarne",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 44,
+        "text": "Vanvik",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 61,
+        "end": 73,
+        "text": "819698 80465",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 85,
+        "end": 90,
+        "text": "Hølen",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 104,
+        "end": 120,
+        "text": "18. Februar 1945",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 128,
+        "end": 133,
+        "text": "78 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 218,
+        "end": 237,
+        "text": "Unilabs Røntgen Ski",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 186,
+        "end": 198,
+        "text": "8. Juni 2015",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 156,
+        "end": 167,
+        "text": "+4761034247",
+        "labels": [
+          "Phone_Number"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 47,
+    "created_at": "2023-08-15T13:07:11.512599Z",
+    "updated_at": "2023-08-15T13:07:11.512637Z",
+    "lead_time": 99.599
+  },
+  {
+    "text": "Utskrivningsnotat:\n\nPasient: Svein-Erik Riaz\nPrimær diagnose kode: V652XXA \nBeskrivelse: Person på utsiden av tungtransportkjøretøy skadet i kollisjon med jernbanetog eller jernbanekjøretøy i ikke-trafikk ulykke.\n\nVed innleggelse opplevde pasienten lett smerte, hadde full mobilitet, langsom pust, ingen tegn til dehydrering, lav kjernetemperatur, forhøyet blodtrykk, og hurtig puls.\n\n23 år gammel pasient ble innlagt på Sykehuset Innlandet, BUP Oppland , poliklinikk Lillehammer den 21. August 2013.\nPasienten ble født i Bjerkøya den 03. Mai 2000.\nPasientens telefonnummer er 004702766543.\nPasientens personnummer er 43309337441.\n\nTusen takk for at du valgte vårt sykehus for din medisinske omsorg. Vennligst ikke nøl med å kontakte oss hvis du har spørsmål eller hvis det er noe annet vi kan bistå deg med. Vær oppmerksom på preventiv behandling og nødvendig oppfølging for å sikre en fullstendig restitusjon. Ha en rask og fullstendig utvinning.\n\nMed vennlig hilsen,\n<Leger i Sykehuset Innlandet>",
+    "original_text": "Utskrivningsnotat:\n\nPasient: <First_Name>Svein-Erik<\/First_Name> <Last_Name>Riaz<\/Last_Name>\nPrimær diagnose kode: V652XXA \nBeskrivelse: Person på utsiden av tungtransportkjøretøy skadet i kollisjon med jernbanetog eller jernbanekjøretøy i ikke-trafikk ulykke.\n\nVed innleggelse opplevde pasienten lett smerte, hadde full mobilitet, langsom pust, ingen tegn til dehydrering, lav kjernetemperatur, forhøyet blodtrykk, og hurtig puls.\n\n<Age>23<\/Age> år gammel pasient ble innlagt på <Health_Care_Unit>Sykehuset Innlandet, BUP Oppland , poliklinikk Lillehammer<\/Health_Care_Unit> den <Date>21. August 2013<\/Date>.\nPasienten ble født i <Location>Bjerkøya<\/Location> den <Date>03. Mai 2000<\/Date>.\nPasientens telefonnummer er <Phone_Number>004702766543<\/Phone_Number>.\nPasientens personnummer er <Social_Security_Number>43309337441<\/Social_Security_Number>.\n\nTusen takk for at du valgte vårt sykehus for din medisinske omsorg. Vennligst ikke nøl med å kontakte oss hvis du har spørsmål eller hvis det er noe annet vi kan bistå deg med. Vær oppmerksom på preventiv behandling og nødvendig oppfølging for å sikre en fullstendig restitusjon. Ha en rask og fullstendig utvinning.\n\nMed vennlig hilsen,\n<Leger i Sykehuset Innlandet>",
+    "id": 47,
+    "label": [
+      {
+        "start": 29,
+        "end": 39,
+        "text": "Svein-Erik",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 40,
+        "end": 44,
+        "text": "Riaz",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 385,
+        "end": 390,
+        "text": "23 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 421,
+        "end": 479,
+        "text": "Sykehuset Innlandet, BUP Oppland , poliklinikk Lillehammer",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 484,
+        "end": 499,
+        "text": "21. August 2013",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 522,
+        "end": 530,
+        "text": "Bjerkøya",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 535,
+        "end": 547,
+        "text": "03. Mai 2000",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 577,
+        "end": 589,
+        "text": "004702766543",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 618,
+        "end": 629,
+        "text": "43309337441",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 979,
+        "end": 998,
+        "text": "Sykehuset Innlandet",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 48,
+    "created_at": "2023-08-15T13:09:42.221312Z",
+    "updated_at": "2023-08-15T13:09:42.221346Z",
+    "lead_time": 149.395
+  },
+  {
+    "text": "Yasin Rønhovde, en 23 år gammel pasient, ble innlagt på Akershus universitetssykehus, ARA, Follo døgn den 31. mars 2022.  Forsvarsenheten \"S42461S Displaced fracture of medial condyle of right humerus\" ble diagnostisert ved innleggelsen. I tillegg viste pasienten tegn til dehydrering, forhøyet hjertefrekvens, full mobilitet, normal pust, ingen smerte, høyt blodtrykk, og lav kjerne temperatur.\n\nPasienten ble født i Stavsjø den 25. januar 2000.\n\nTelefonnummeret til pasienten er +4760360916.\n\nPersonnummeret til pasienten er 194741 69497.\n\nPasient Yasin Rønhovde har blitt utskrevet, men oppfordres til å vedlikeholde regelmessig oppfølging for videre overvåkning av sin fysiske helse. Skriftlig oppfølging og videre veiledning er gitt før utskrivning. Neste aftalt legebesøk er satt til tre uker etter utskrivning.\n\nHvis symptomer som smerte eller ubehag øker, eller hvis det forekommer nye symptomer, anbefales det sterkt at kontakten med helsepersonell opprettholdes for videre evaluering.",
+    "original_text": "<First_Name>Yasin<\/First_Name> <Last_Name>Rønhovde<\/Last_Name>, en <Age>23<\/Age> år gammel pasient, ble innlagt på <Health_Care_Unit>Akershus universitetssykehus, ARA, Follo døgn<\/Health_Care_Unit> den <Date>31. mars 2022<\/Date>.  Forsvarsenheten \"S42461S Displaced fracture of medial condyle of right humerus\" ble diagnostisert ved innleggelsen. I tillegg viste pasienten tegn til dehydrering, forhøyet hjertefrekvens, full mobilitet, normal pust, ingen smerte, høyt blodtrykk, og lav kjerne temperatur.\n\nPasienten ble født i <Location>Stavsjø<\/Location> den <Date>25. januar 2000<\/Date>.\n\nTelefonnummeret til pasienten er <Phone_Number>+4760360916<\/Phone_Number>.\n\nPersonnummeret til pasienten er <Social_Security_Number>194741 69497<\/Social_Security_Number>.\n\nPasient <First_Name>Yasin<\/First_Name> <Last_Name>Rønhovde<\/Last_Name> har blitt utskrevet, men oppfordres til å vedlikeholde regelmessig oppfølging for videre overvåkning av sin fysiske helse. Skriftlig oppfølging og videre veiledning er gitt før utskrivning. Neste aftalt legebesøk er satt til tre uker etter utskrivning.\n\nHvis symptomer som smerte eller ubehag øker, eller hvis det forekommer nye symptomer, anbefales det sterkt at kontakten med helsepersonell opprettholdes for videre evaluering.",
+    "id": 48,
+    "label": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "Yasin",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 6,
+        "end": 14,
+        "text": "Rønhovde",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 19,
+        "end": 24,
+        "text": "23 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 56,
+        "end": 101,
+        "text": "Akershus universitetssykehus, ARA, Follo døgn",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 106,
+        "end": 119,
+        "text": "31. mars 2022",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 418,
+        "end": 425,
+        "text": "Stavsjø",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 430,
+        "end": 445,
+        "text": "25. januar 2000",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 481,
+        "end": 492,
+        "text": "+4760360916",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 527,
+        "end": 539,
+        "text": "194741 69497",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 550,
+        "end": 555,
+        "text": "Yasin",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 556,
+        "end": 564,
+        "text": "Rønhovde",
+        "labels": [
+          "Last_Name"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 49,
+    "created_at": "2023-08-15T13:10:45.757190Z",
+    "updated_at": "2023-08-15T13:10:45.757227Z",
+    "lead_time": 62.212
+  },
+  {
+    "text": "Utskrivingsnotat for:\n\nAhmad Mørk, Født 13. september 1957 i Sakshaug- 344809 62076.\n\n<Patient> er 65 år gammel og ble innlagt på Sykehuset Innlandet, DPS Elverum-Hamar, poliklinikk Hamar den 10. mai 2019 med primær diagnosekode \"S72354P - ikke-forskyvet knusningsbrudd i skaftet på høyre lårben\".\n\nVed inntak hadde Ahmad regular pust, nedsatt hjertefrekvens og høyt blodtrykk. Hans kjernetemperatur var forhøyet, han demonstrerte lite mobilitet og mild smerte, med noen tegn på dehydrering også observert.\n\nTelefonnummer til Ahmad er +4799343198.",
+    "original_text": "Utskrivingsnotat for:\n\n<First_Name>Ahmad<\/First_Name> <Last_Name>Mørk<\/Last_Name>, Født <Date>13. september 1957<\/Date> i <Location>Sakshaug<\/Location>- <Social_Security_Number>344809 62076<\/Social_Security_Number>.\n\n<Patient> er <Age>65<\/Age> år gammel og ble innlagt på <Health_Care_Unit>Sykehuset Innlandet, DPS Elverum-Hamar, poliklinikk Hamar<\/Health_Care_Unit> den <Date>10. mai 2019<\/Date> med primær diagnosekode \"S72354P - ikke-forskyvet knusningsbrudd i skaftet på høyre lårben\".\n\nVed inntak hadde <First_Name>Ahmad<\/First_Name> regular pust, nedsatt hjertefrekvens og høyt blodtrykk. Hans kjernetemperatur var forhøyet, han demonstrerte lite mobilitet og mild smerte, med noen tegn på dehydrering også observert.\n\nTelefonnummer til <First_Name>Ahmad<\/First_Name> er <Phone_Number>+4799343198<\/Phone_Number>.",
+    "id": 49,
+    "label": [
+      {
+        "start": 23,
+        "end": 28,
+        "text": "Ahmad",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 29,
+        "end": 33,
+        "text": "Mørk",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 40,
+        "end": 58,
+        "text": "13. september 1957",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 61,
+        "end": 69,
+        "text": "Sakshaug",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 71,
+        "end": 83,
+        "text": "344809 62076",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 99,
+        "end": 104,
+        "text": "65 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 130,
+        "end": 187,
+        "text": "Sykehuset Innlandet, DPS Elverum-Hamar, poliklinikk Hamar",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 192,
+        "end": 204,
+        "text": "10. mai 2019",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 316,
+        "end": 321,
+        "text": "Ahmad",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 526,
+        "end": 531,
+        "text": "Ahmad",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 535,
+        "end": 546,
+        "text": "+4799343198",
+        "labels": [
+          "Phone_Number"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 50,
+    "created_at": "2023-08-15T13:11:50.141627Z",
+    "updated_at": "2023-08-15T13:11:50.141657Z",
+    "lead_time": 63.107
+  },
+  {
+    "text": "Pasientdata:\nNavn: Grzegorz Nævdal\nAlder: 43 år, født 05. August 1980 i Pollestad\nTelefonnummer: +4795432326,\nPersonnummer: 53002137306\nInnleggelsessted: Sykehuset Innlandet, DPS Gjøvik, poliklinik Valdres, Innlagt: 29. August 2020.\n\nHoveddiagnose ved innleggelse: T24712D Korrosjon av tredje grad på venstre lår. \n\nVed innleggelsen hadde pasienten moderat smerte, normalt blodtrykk, jevn puls, tegn på dehydrering, lav kjerne temperatur, full mobilitet og overfladisk pust.",
+    "original_text": "Pasientdata:\nNavn: <First_Name>Grzegorz<\/First_Name> <Last_Name>Nævdal<\/Last_Name>\nAlder: <Age>43<\/Age> år, født <Date>05. August 1980<\/Date> i <Location>Pollestad<\/Location>\nTelefonnummer: <Phone_Number>+4795432326<\/Phone_Number>,\nPersonnummer: <Social_Security_Number>53002137306<\/Social_Security_Number>\nInnleggelsessted: <Health_Care_Unit>Sykehuset Innlandet, DPS Gjøvik, poliklinik Valdres<\/Health_Care_Unit>, Innlagt: <Date>29. August 2020.<\/Date>\n\nHoveddiagnose ved innleggelse: T24712D Korrosjon av tredje grad på venstre lår. \n\nVed innleggelsen hadde pasienten moderat smerte, normalt blodtrykk, jevn puls, tegn på dehydrering, lav kjerne temperatur, full mobilitet og overfladisk pust.",
+    "id": 50,
+    "label": [
+      {
+        "start": 19,
+        "end": 27,
+        "text": "Grzegorz",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "text": "Nævdal",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 42,
+        "end": 47,
+        "text": "43 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 54,
+        "end": 69,
+        "text": "05. August 1980",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 72,
+        "end": 81,
+        "text": "Pollestad",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 97,
+        "end": 108,
+        "text": "+4795432326",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 124,
+        "end": 135,
+        "text": "53002137306",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 154,
+        "end": 205,
+        "text": "Sykehuset Innlandet, DPS Gjøvik, poliklinik Valdres",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 216,
+        "end": 231,
+        "text": "29. August 2020",
+        "labels": [
+          "Date"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 51,
+    "created_at": "2023-08-15T13:12:33.795120Z",
+    "updated_at": "2023-08-15T13:12:33.795151Z",
+    "lead_time": 42.151
+  },
+  {
+    "text": "Henvisning:\n\nPasientens navn: Yosef Ulset\nFødt 06. Oktober 1948 i Rødberg\nAlder ved innleggelse: 74 år\nHjemtelenefon: 004760552159\nSosial sikkerhetsnummer: 72328710464\nInnlagt ved Helse Møre og Romsdal, Molde behandlingssenter den 09. April 2022\n\nPrimær diagnosekode: G2581 Rastløse ben syndrom.\nFunn ved innleggelse: Høy blodtrykk, moderat smerte, forhøyet kjernetemperatur, lav puls, begrenset mobilitet, jevn pusting, og tegn til dehydrering.\n\nBehandlingsoppdatering og tilførsel plan:\n\nYosef har vært under observasjon og pasientomsorg for symptomene nevnt ovenfor. Vi har initiert tiltak for å håndtere høyt blodtrykk, moderat smerte, og forhøyet kjerntemperatur. Vi har også intensivert hydrering for å håndtere de tegn til dehydrering vi har observert. Sanntidsevaluering av hans hjertepuls har vært en prioritet gitt den observerte lave pulsen. Vi har også tatt grep for å forbedre mobiliteten.\n\nPrimær diagnosekode \"G2581 Rastløse ben-syndrom\" blir nøye overvåket og passende tiltak blir tatt for å håndtere dette.\n\nVennligst se den vedlagte henvisningen for videre informasjon og kontakt oss for ytterligere diskusjon angående Yosefs tilstand og behandling.",
+    "original_text": "Henvisning:\n\nPasientens navn: <First_Name>Yosef<\/First_Name> <Last_Name>Ulset<\/Last_Name>\nFødt <Date>06. Oktober 1948<\/Date> i <Location>Rødberg<\/Location>\nAlder ved innleggelse: <Age>74<\/Age> år\nHjemtelenefon: <Phone_Number>004760552159<\/Phone_Number>\nSosial sikkerhetsnummer: <Social_Security_Number>72328710464<\/Social_Security_Number>\nInnlagt ved <Health_Care_Unit>Helse Møre og Romsdal, Molde behandlingssenter<\/Health_Care_Unit> den <Date>09. April 2022<\/Date>\n\nPrimær diagnosekode: G2581 Rastløse ben syndrom.\nFunn ved innleggelse: Høy blodtrykk, moderat smerte, forhøyet kjernetemperatur, lav puls, begrenset mobilitet, jevn pusting, og tegn til dehydrering.\n\nBehandlingsoppdatering og tilførsel plan:\n\n<First_Name>Yosef<\/First_Name> har vært under observasjon og pasientomsorg for symptomene nevnt ovenfor. Vi har initiert tiltak for å håndtere høyt blodtrykk, moderat smerte, og forhøyet kjerntemperatur. Vi har også intensivert hydrering for å håndtere de tegn til dehydrering vi har observert. Sanntidsevaluering av hans hjertepuls har vært en prioritet gitt den observerte lave pulsen. Vi har også tatt grep for å forbedre mobiliteten.\n\nPrimær diagnosekode \"G2581 Rastløse ben-syndrom\" blir nøye overvåket og passende tiltak blir tatt for å håndtere dette.\n\nVennligst se den vedlagte henvisningen for videre informasjon og kontakt oss for ytterligere diskusjon angående <First_Name>Yosef<\/First_Name>s tilstand og behandling.",
+    "id": 51,
+    "label": [
+      {
+        "start": 30,
+        "end": 35,
+        "text": "Yosef",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 41,
+        "text": "Ulset",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 47,
+        "end": 63,
+        "text": "06. Oktober 1948",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 66,
+        "end": 73,
+        "text": "Rødberg",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 97,
+        "end": 102,
+        "text": "74 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 118,
+        "end": 130,
+        "text": "004760552159",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 156,
+        "end": 167,
+        "text": "72328710464",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 180,
+        "end": 226,
+        "text": "Helse Møre og Romsdal, Molde behandlingssenter",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 231,
+        "end": 245,
+        "text": "09. April 2022",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 490,
+        "end": 495,
+        "text": "Yosef",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 1137,
+        "end": 1143,
+        "text": "Yosefs",
+        "labels": [
+          "First_Name"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 52,
+    "created_at": "2023-08-15T13:14:46.408594Z",
+    "updated_at": "2023-08-15T13:14:46.408626Z",
+    "lead_time": 131.37
+  },
+  {
+    "text": "Epikrise fra Vestre Viken, Bærum sykehus, Røntgen\n\nPasient: Jørn Hinna\nFødselsdato: 23.05.2007\nFødselssted: Knarvik\nPasientens alder: 16 år\nTelefonnummer: 57580582\nPersonnummer: 88518206032\n\nInnleggelse: Pasienten ble innlagt den 07.04.2015 med primær diagnose kode \"S72121P\", skadet brudd på mindre trochanter på høyre lårben.\n\nVed inntak hadde pasienten langsom puls, svak pust, noen tegn på dehydrering, lav kjernetemperatur, svak smerte, full bevegelighet, og lav blodtryk.\n\nTilstand ved utskrivelse: Passende utbedringsprosess er observert hos pasienten, hvem nå oppviser stabil kroppstemperatur, normal puls- og pusterate, ingen tegn på dehydrering, kontrollert blodtrykk, og minimale smerter. Pasientens fysiske funksjoner og mobilitet er også forbedret. Fortsettende fysioterapi og regelmessige oppfølgende er anbefalt for videre recovery, og nøye overvåkning av pasientens allmenntilstand er viktig i denne perioden.\n\n<\nAssistant.General Recommendations\/>\n\nPasienten anbefales å fortsette med fysioterapi på poliklinikke basis. Pasienten bør også jevnlig gjennomgå røntgenundersøkelse av lårbensbruddet for å evaluere utbedringen. Eventuelle endringer i pasientens helsestatus (f.eks. økt smerte, feber, infeksjonssymptomer) bør umiddelbart rapporteres til helsepersonell. Pasienten bør også holde seg til retrospektiv observasjon etter utskrivelse fra sykehuset og tilbakekomsten hjem.\n\nJeg anbefaler å ta denne pasienten opp til geriatrisk vurdering etter 3 måneder.\n\n---\n\nMed vennlige hilsener,\n\n<health care professional name and position>\n\n",
+    "original_text": "Epikrise fra <Health_Care_Unit>Vestre Viken, Bærum sykehus, Røntgen<\/Health_Care_Unit>\n\nPasient: <First_Name>Jørn<\/First_Name> <Last_Name>Hinna<\/Last_Name>\nFødselsdato: <Date>23.05.2007<\/Date>\nFødselssted: <Location>Knarvik<\/Location>\nPasientens alder: <Age>16<\/Age> år\nTelefonnummer: <Phone_Number>57580582<\/Phone_Number>\nPersonnummer: <Social_Security_Number>88518206032<\/Social_Security_Number>\n\nInnleggelse: Pasienten ble innlagt den <Date>07.04.2015<\/Date> med primær diagnose kode \"S72121P\", skadet brudd på mindre trochanter på høyre lårben.\n\nVed inntak hadde pasienten langsom puls, svak pust, noen tegn på dehydrering, lav kjernetemperatur, svak smerte, full bevegelighet, og lav blodtryk.\n\nTilstand ved utskrivelse: Passende utbedringsprosess er observert hos pasienten, hvem nå oppviser stabil kroppstemperatur, normal puls- og pusterate, ingen tegn på dehydrering, kontrollert blodtrykk, og minimale smerter. Pasientens fysiske funksjoner og mobilitet er også forbedret. Fortsettende fysioterapi og regelmessige oppfølgende er anbefalt for videre recovery, og nøye overvåkning av pasientens allmenntilstand er viktig i denne perioden.\n\n<\nAssistant.General Recommendations\/>\n\nPasienten anbefales å fortsette med fysioterapi på poliklinikke basis. Pasienten bør også jevnlig gjennomgå røntgenundersøkelse av lårbensbruddet for å evaluere utbedringen. Eventuelle endringer i pasientens helsestatus (f.eks. økt smerte, feber, infeksjonssymptomer) bør umiddelbart rapporteres til helsepersonell. Pasienten bør også holde seg til retrospektiv observasjon etter utskrivelse fra sykehuset og tilbakekomsten hjem.\n\nJeg anbefaler å ta denne pasienten opp til geriatrisk vurdering etter 3 måneder.\n\n---\n\nMed vennlige hilsener,\n\n<health care professional name and position>\n\n",
+    "id": 52,
+    "label": [
+      {
+        "start": 13,
+        "end": 49,
+        "text": "Vestre Viken, Bærum sykehus, Røntgen",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 60,
+        "end": 64,
+        "text": "Jørn",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 65,
+        "end": 70,
+        "text": "Hinna",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 84,
+        "end": 94,
+        "text": "23.05.2007",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 108,
+        "end": 115,
+        "text": "Knarvik",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 134,
+        "end": 139,
+        "text": "16 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 155,
+        "end": 163,
+        "text": "57580582",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 178,
+        "end": 189,
+        "text": "88518206032",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 230,
+        "end": 240,
+        "text": "07.04.2015",
+        "labels": [
+          "Date"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 53,
+    "created_at": "2023-08-15T13:15:44.409943Z",
+    "updated_at": "2023-08-15T13:15:44.409975Z",
+    "lead_time": 56.745
+  },
+  {
+    "text": "Utskrivningsnotat:\n\nPasient: Mihai Aasland\nAlder: 19 år \nFødselsdato: 03. Desember 2003 \nFødested: Fedje \nTelefonnummer: +4721283900 \nPersonnummer: 849996 62075\n\nMihai ble innlagt på Tyrili Arena Arendal den 14. September 2020 med hoveddiagnose kode \"O0732 Nyresvikt etter mislykket abort\".\nVed innleggelsen hadde pasienten økt kjerne temperatur, tydelige tegn på dehydrering, regelmessig puls, høyt blodtrykk, redusert mobilitet, moderat smerte og regelmessige åndetaking.\n\nEtter grundig omsorg og behandling fra vårt medisinske personell, er vi glade for å melde at Mihais tilstand har forbedret seg betydelig. Han har blitt utskrevet i dag og kan fortsette sin restitusjon hjemme.Vi anbefaler kontakt med egen lege for videre oppfølging av behandlingen.\n\nVennligst husk at dette er bare et utskrivningsnotat og at du bør bekrefte all ytterligere informasjon direkte fra lege eller pleiepersonalet.\n",
+    "original_text": "Utskrivningsnotat:\n\nPasient: <First_Name>Mihai<\/First_Name> <Last_Name>Aasland<\/Last_Name>\nAlder: <Age>19<\/Age> år \nFødselsdato: <Date>03. Desember 2003<\/Date> \nFødested: <Location>Fedje<\/Location> \nTelefonnummer: <Phone_Number>+4721283900<\/Phone_Number> \nPersonnummer: <Social_Security_Number>849996 62075<\/Social_Security_Number>\n\n<First_Name>Mihai<\/First_Name> ble innlagt på <Health_Care_Unit>Tyrili Arena Arendal<\/Health_Care_Unit> den <Date>14. September 2020<\/Date> med hoveddiagnose kode \"O0732 Nyresvikt etter mislykket abort\".\nVed innleggelsen hadde pasienten økt kjerne temperatur, tydelige tegn på dehydrering, regelmessig puls, høyt blodtrykk, redusert mobilitet, moderat smerte og regelmessige åndetaking.\n\nEtter grundig omsorg og behandling fra vårt medisinske personell, er vi glade for å melde at <First_Name>Mihai<\/First_Name>s tilstand har forbedret seg betydelig. Han har blitt utskrevet i dag og kan fortsette sin restitusjon hjemme.Vi anbefaler kontakt med egen lege for videre oppfølging av behandlingen.\n\nVennligst husk at dette er bare et utskrivningsnotat og at du bør bekrefte all ytterligere informasjon direkte fra lege eller pleiepersonalet.\n",
+    "id": 53,
+    "label": [
+      {
+        "start": 29,
+        "end": 34,
+        "text": "Mihai",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 35,
+        "end": 42,
+        "text": "Aasland",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 50,
+        "end": 55,
+        "text": "19 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 70,
+        "end": 87,
+        "text": "03. Desember 2003",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 99,
+        "end": 104,
+        "text": "Fedje",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 121,
+        "end": 132,
+        "text": "+4721283900",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 148,
+        "end": 160,
+        "text": "849996 62075",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 183,
+        "end": 203,
+        "text": "Tyrili Arena Arendal",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 208,
+        "end": 226,
+        "text": "14. September 2020",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 568,
+        "end": 574,
+        "text": "Mihais",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 162,
+        "end": 167,
+        "text": "Mihai",
+        "labels": [
+          "First_Name"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 54,
+    "created_at": "2023-08-15T13:17:04.480746Z",
+    "updated_at": "2023-08-15T13:17:04.480776Z",
+    "lead_time": 78.797
+  },
+  {
+    "text": "Utskrivningsnotat - pasient: Kurt Klungtveit\n\nPasientopplysninger: \nNavn: Kurt Klungtveit\nFødselsdato: 02.12.1955\nAlder: 67 år\nTelefonnummer: +4743601476\nPersonnummer: 95964148898\nFødselssted: Fjordgard\n\nRingen Rehabiliteringssenter\nAdmisjon dato: 15.05.2021\n\nPrimær diagnose: S49041P Salter-Harris Type IV fyselefraktur i øvre del av humerus.\n\nTilstandsrapport ved innleggelse: \nDen kliniske vurderingen ved innleggelse viste tegn til dehydrering og lavt blodtrykk. Pasienten rapporterte ingen smerte, hadde redusert mobilitet, langsom puls, normal kroppstemperatur, og vanlig respirasjon.\n\nHelseoppfølgning etter utskrivning:\nDen videre pasientoppfølgningen vil bli overvåket tett, med regelmessige oppdateringer om tilstanden. Rehabilitering og fysioterapi er anbefalt for å gjenopprette full funksjon i den rammede armen.",
+    "original_text": "Utskrivningsnotat - pasient: <First_Name>Kurt<\/First_Name> <Last_Name>Klungtveit<\/Last_Name>\n\nPasientopplysninger: \nNavn: <First_Name>Kurt<\/First_Name> <Last_Name>Klungtveit<\/Last_Name>\nFødselsdato: <Date>02.12.1955<\/Date>\nAlder: <Age>67<\/Age> år\nTelefonnummer: <Phone_Number>+4743601476<\/Phone_Number>\nPersonnummer: <Social_Security_Number>95964148898<\/Social_Security_Number>\nFødselssted: <Location>Fjordgard<\/Location>\n\n<aHealth_Care_Unit>Ringen Rehabiliteringssenter<\/aHealth_Care_Unit>\nAdmisjon dato: <Date>15.05.2021<\/Date>\n\nPrimær diagnose: S49041P Salter-Harris Type IV fyselefraktur i øvre del av humerus.\n\nTilstandsrapport ved innleggelse: \nDen kliniske vurderingen ved innleggelse viste tegn til dehydrering og lavt blodtrykk. Pasienten rapporterte ingen smerte, hadde redusert mobilitet, langsom puls, normal kroppstemperatur, og vanlig respirasjon.\n\nHelseoppfølgning etter utskrivning:\nDen videre pasientoppfølgningen vil bli overvåket tett, med regelmessige oppdateringer om tilstanden. Rehabilitering og fysioterapi er anbefalt for å gjenopprette full funksjon i den rammede armen.",
+    "id": 54,
+    "label": [
+      {
+        "start": 29,
+        "end": 33,
+        "text": "Kurt",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 34,
+        "end": 44,
+        "text": "Klungtveit",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 74,
+        "end": 78,
+        "text": "Kurt",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 79,
+        "end": 89,
+        "text": "Klungtveit",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 103,
+        "end": 113,
+        "text": "02.12.1955",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 121,
+        "end": 126,
+        "text": "67 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 142,
+        "end": 153,
+        "text": "+4743601476",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 168,
+        "end": 179,
+        "text": "95964148898",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 193,
+        "end": 202,
+        "text": "Fjordgard",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 204,
+        "end": 232,
+        "text": "Ringen Rehabiliteringssenter",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 248,
+        "end": 258,
+        "text": "15.05.2021",
+        "labels": [
+          "Date"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 55,
+    "created_at": "2023-08-15T13:18:08.916623Z",
+    "updated_at": "2023-08-15T13:18:08.916654Z",
+    "lead_time": 63.156
+  },
+  {
+    "text": "Henvisning til Fredrick Takvam er utladet fra Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg med hoveddiagnosekoden \"S72351G\", som indikerer en hoyst forflyttet flerbrudd i høyre lårben.\n\nVed innleggelsen var pasientens tilstand observert som følger:\n- Ingen smerte, men overfladisk puste og økt blodtrykk.\n- Normal kroppstemperatur\n- Senket hjerterytme\n- Begrenset bevegelighet\n- Ingen tegn på dehydrering\n\nPersonlig informasjon om pasienten er oppgitt for videre behandling:\n- 47 år gammel.\n- Innlagt på Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg den 13. mai 2016.\n- Født i Moltustranda den 20. mai 1976.\n- Kontakttelefon er +4769084433.\n- Folkeregistrert nummer er 072639 47834.\n\nBehandlingen på Sykehuset Østfold kjennetegnes av utmerket pleie av hans medisinske behov. Jeg anbefaler oppfølging hos primærlege for ytterligere kontroll.",
+    "original_text": "Henvisning til <First_Name>Fredrick<\/First_Name> <Last_Name>Takvam<\/Last_Name> er utladet fra <Health_Care_Unit>Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg<\/Health_Care_Unit> med hoveddiagnosekoden \"S72351G\", som indikerer en hoyst forflyttet flerbrudd i høyre lårben.\n\nVed innleggelsen var pasientens tilstand observert som følger:\n- Ingen smerte, men overfladisk puste og økt blodtrykk.\n- Normal kroppstemperatur\n- Senket hjerterytme\n- Begrenset bevegelighet\n- Ingen tegn på dehydrering\n\nPersonlig informasjon om pasienten er oppgitt for videre behandling:\n- <Age>47<\/Age> år gammel.\n- Innlagt på <Health_Care_Unit>Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg<\/Health_Care_Unit> den <Date>13. mai 2016<\/Date>.\n- Født i <Location>Moltustranda<\/Location> den <Date>20. mai 1976<\/Date>.\n- Kontakttelefon er <Phone_Number>+4769084433<\/Phone_Number>.\n- Folkeregistrert nummer er <Social_Security_Number>072639 47834<\/Social_Security_Number>.\n\nBehandlingen på <Health_Care_Unit>Sykehuset Østfold<\/Health_Care_Unit> kjennetegnes av utmerket pleie av hans medisinske behov. Jeg anbefaler oppfølging hos primærlege for ytterligere kontroll.",
+    "id": 55,
+    "label": [
+      {
+        "start": 15,
+        "end": 23,
+        "text": "Fredrick",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "text": "Takvam",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 46,
+        "end": 117,
+        "text": "Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 504,
+        "end": 509,
+        "text": "47 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 531,
+        "end": 602,
+        "text": "Sykehuset Østfold, Poliklinikk rus og avhengighetsbehandling, Sarpsborg",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 607,
+        "end": 619,
+        "text": "13. mai 2016",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 630,
+        "end": 642,
+        "text": "Moltustranda",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 647,
+        "end": 659,
+        "text": "20. mai 1976",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 681,
+        "end": 692,
+        "text": "+4769084433",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 722,
+        "end": 734,
+        "text": "072639 47834",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 753,
+        "end": 770,
+        "text": "Sykehuset Østfold",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 56,
+    "created_at": "2023-08-15T13:19:16.214662Z",
+    "updated_at": "2023-08-15T13:19:16.214701Z",
+    "lead_time": 66.051
+  },
+  {
+    "text": "Konstantin Sagmo (Fødselsnummer: 638302 88132), en 20 år gammel pasient, ble innlagt på Sykehuset Østfold, Barne- og Ungdomspsykiatrisk poliklinikk Moss den 18. februar 2016.\n\nPasienten, opprinnelig fra Aulifeltet (født den 30. desember 2002), ble innlagt med primærdiagnosekode \"M71421 Kalsiumavsetning i bursa\". Ved opptak hadde pasienten forhøyet kjerntemperatur, treg pusting, senket hjertefrekvens, økt blodtrykk, ingen smerte, noen tegn på dehydrering, full mobilitet\n\nAnnonsert kontaktinformasjon inkluderer telefonnummeret 004718437690.",
+    "original_text": "<First_Name>Konstantin<\/First_Name> <Last_Name>Sagmo<\/Last_Name> (Fødselsnummer: <Social_Security_Number>638302 88132<\/Social_Security_Number>), en <Age>20<\/Age> år gammel pasient, ble innlagt på <Health_Care_Unit>Sykehuset Østfold, Barne- og Ungdomspsykiatrisk poliklinikk Moss<\/Health_Care_Unit> den <Date>18. februar 2016<\/Date>.\n\nPasienten, opprinnelig fra <Location>Aulifeltet<\/Location> (født den <Date>30. desember 2002<\/Date>), ble innlagt med primærdiagnosekode \"M71421 Kalsiumavsetning i bursa\". Ved opptak hadde pasienten forhøyet kjerntemperatur, treg pusting, senket hjertefrekvens, økt blodtrykk, ingen smerte, noen tegn på dehydrering, full mobilitet\n\nAnnonsert kontaktinformasjon inkluderer telefonnummeret <Phone_Number>004718437690<\/Phone_Number>.",
+    "id": 56,
+    "label": [
+      {
+        "start": 0,
+        "end": 10,
+        "text": "Konstantin",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 11,
+        "end": 16,
+        "text": "Sagmo",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 33,
+        "end": 45,
+        "text": "638302 88132",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 51,
+        "end": 56,
+        "text": "20 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 88,
+        "end": 152,
+        "text": "Sykehuset Østfold, Barne- og Ungdomspsykiatrisk poliklinikk Moss",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 203,
+        "end": 213,
+        "text": "Aulifeltet",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 224,
+        "end": 241,
+        "text": "30. desember 2002",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 531,
+        "end": 543,
+        "text": "004718437690",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 157,
+        "end": 173,
+        "text": "18. februar 2016",
+        "labels": [
+          "Date"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 57,
+    "created_at": "2023-08-15T13:20:08.750873Z",
+    "updated_at": "2023-08-15T13:20:08.750904Z",
+    "lead_time": 51.238
+  },
+  {
+    "text": "Tor Mork, 59 år, ble innlagt på Helse Stavanger, Sandnes DPS, Varatun den 2. juni 2013. Primær diagnosekode ved innleggelse var \"V2551XS - passenger på elektrisk (assistent) sykkel skadet i kollisjon med jernbanetog eller jernbanevogn i trafikkulykke\". \n\nVed innleggelse hadde pasienten normal kroppstemperatur, overfladisk pust, full mobilitet, lett smerte, regulær puls, høyt blodtrykk og klare tegn på dehydrering. \n\nYtterligere informasjon om pasienten er som følger:\n- Fødselsdato: 30. januar 1964, født i Kvål.\n- Telefonnummer: 67125307.\n- Personnummer: 943075 31735. \n\nPatienten har blitt tildelt riktig behandling i henhold til sine symptomer og responsen fra behandlingen har vist positiv fremgang. Han må fortsatt monitoreres nøye, men det ser ut til at tilstanden hans forbedrer seg med riktig behandling og hvile. Se vedlagt et detaljert medisinsk notat for mer detaljert informasjon om hans tilstand og framgang.",
+    "original_text": "<First_Name>Tor<\/First_Name> <Last_Name>Mork<\/Last_Name>, <Age>59<\/Age> år, ble innlagt på <Health_Care_Unit>Helse Stavanger, Sandnes DPS, Varatun<\/Health_Care_Unit> den <Date>2. juni 2013<\/Date>. Primær diagnosekode ved innleggelse var \"V2551XS - passenger på elektrisk (assistent) sykkel skadet i kollisjon med jernbanetog eller jernbanevogn i trafikkulykke\". \n\nVed innleggelse hadde pasienten normal kroppstemperatur, overfladisk pust, full mobilitet, lett smerte, regulær puls, høyt blodtrykk og klare tegn på dehydrering. \n\nYtterligere informasjon om pasienten er som følger:\n- Fødselsdato: <Date>30. januar 1964<\/Date>, født i <Location>Kvål<\/Location>.\n- Telefonnummer: <Phone_Number>67125307<\/Phone_Number>.\n- Personnummer: <Social_Security_Number>943075 31735<\/Social_Security_Number>. \n\nPatienten har blitt tildelt riktig behandling i henhold til sine symptomer og responsen fra behandlingen har vist positiv fremgang. Han må fortsatt monitoreres nøye, men det ser ut til at tilstanden hans forbedrer seg med riktig behandling og hvile. Se vedlagt et detaljert medisinsk notat for mer detaljert informasjon om hans tilstand og framgang.",
+    "id": 57,
+    "label": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "Tor",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 4,
+        "end": 8,
+        "text": "Mork",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 10,
+        "end": 15,
+        "text": "59 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 32,
+        "end": 69,
+        "text": "Helse Stavanger, Sandnes DPS, Varatun",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 74,
+        "end": 86,
+        "text": "2. juni 2013",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 487,
+        "end": 502,
+        "text": "30. januar 1964",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 511,
+        "end": 515,
+        "text": "Kvål",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 534,
+        "end": 542,
+        "text": "67125307",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 560,
+        "end": 572,
+        "text": "943075 31735",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 58,
+    "created_at": "2023-08-15T13:20:56.129504Z",
+    "updated_at": "2023-08-15T13:20:56.129534Z",
+    "lead_time": 45.956
+  },
+  {
+    "text": "Utskrivningsnotat:\n\nPasientnavn: Alexandru Lea\n\nAlder: 13 år\n\nHoveddiagnose ved innleggelse: \"T442X2A Poisoning by ganglionic blocking drugs\"\n\nVed innleggelse hadde pasienten senket hjertefreokvens, ingen smerter, høyt blodtrykk, tegn på dehydrering, normal kroppstemperatur, redusert mobilitet og regelmessig pust.\n\nFølgende tilleggsinformasjon om pasienten er registrert:\n\nFødt: 04. Oktober. 2009\nFødested: Larsnes\nSosial sikkerhetsnummer: 48599730891\nTelefonnummer: +4773210098\n\nDato for innleggelse: 31. desember 2017\nSykehus\/seksjon: Russeksjonen, UNN Narvik \n\n*** End of record ***",
+    "original_text": "Utskrivningsnotat:\n\nPasientnavn: <First_Name>Alexandru<\/First_Name> <Last_Name>Lea<\/Last_Name>\n\nAlder: <Age>13<\/Age> år\n\nHoveddiagnose ved innleggelse: \"T442X2A Poisoning by ganglionic blocking drugs\"\n\nVed innleggelse hadde pasienten senket hjertefreokvens, ingen smerter, høyt blodtrykk, tegn på dehydrering, normal kroppstemperatur, redusert mobilitet og regelmessig pust.\n\nFølgende tilleggsinformasjon om pasienten er registrert:\n\nFødt: <Date>04. Oktober. 2009<\/Date>\nFødested: <Location>Larsnes<\/Location>\nSosial sikkerhetsnummer: <Social_Security_Number>48599730891<\/Social_Security_Number>\nTelefonnummer: <Phone_Number>+4773210098<\/Phone_Number>\n\nDato for innleggelse: <Date>31. desember 2017<\/Date>\nSykehus\/seksjon: <Health_Care_Unit>Russeksjonen, UNN Narvik<\/Health_Care_Unit> \n\n*** End of record ***",
+    "id": 58,
+    "label": [
+      {
+        "start": 33,
+        "end": 42,
+        "text": "Alexandru",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 43,
+        "end": 46,
+        "text": "Lea",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 55,
+        "end": 60,
+        "text": "13 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 381,
+        "end": 398,
+        "text": "04. Oktober. 2009",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 409,
+        "end": 416,
+        "text": "Larsnes",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 442,
+        "end": 453,
+        "text": "48599730891",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 469,
+        "end": 480,
+        "text": "+4773210098",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 504,
+        "end": 521,
+        "text": "31. desember 2017",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 539,
+        "end": 564,
+        "text": "Russeksjonen, UNN Narvik ",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 59,
+    "created_at": "2023-08-15T13:21:39.941454Z",
+    "updated_at": "2023-08-15T13:21:39.941485Z",
+    "lead_time": 42.5
+  },
+  {
+    "text": "Utskrivningsnotat for Snorre Skeie\n\nPrimær diagnoseskode: S0005XA Overfladisk fremmedlegeme i hodebunnen\n\nPasientopplysninger:\n\nSnorre Skeie, 73 år gammel, født den 12. januar 1950 i Honningsvåg. Telefonnummer er 49526415 og personnummer er 634378 95192.\n\nInnleggelsesinformasjon:\n\nPasienten ble innlagt den 7. desember 2022 ved Helse Stavanger, Ruspoliklinikk ung Sandnes (RuPo Sandnes) med hoveddiagnose S0005XA overfladisk fremmedlegeme i hodebunnen.\n\nVed innleggelse rapporterte pasienten moderat smerte, overfladisk pusting, full bevegelighet, høyt blodtrykk, tydelige tegn på dehydrering, lav kjerntemperatur, og regulær puls.\n\nBehandling og funn:\n\nBehandlingen krevde fjerning av det overfladiske fremmede legemet fra hodebunnen av pasienten. Pasienten reagerte positivt på behandlingen og smertene minket etter inngrepet.\n\nEtter utskrivelse:\n\nPasienten er oppfordret til å oppsøke lege dersom smerten returnerer eller forverres. Videre bør det tas tiltak for å forhindre dehydrering og overvåke blodtrykket.",
+    "original_text": "Utskrivningsnotat for <First_Name>Snorre<\/First_Name> <Last_Name>Skeie<\/Last_Name>\n\nPrimær diagnoseskode: S0005XA Overfladisk fremmedlegeme i hodebunnen\n\nPasientopplysninger:\n\n<First_Name>Snorre<\/First_Name> <Last_Name>Skeie<\/Last_Name>, <Age>73<\/Age> år gammel, født den <Date>12. januar 1950<\/Date> i <Location>Honningsvåg<\/Location>. Telefonnummer er <Phone_Number>49526415<\/Phone_Number> og personnummer er <Social_Security_Number>634378 95192<\/Social_Security_Number>.\n\nInnleggelsesinformasjon:\n\nPasienten ble innlagt den <Date>7. desember 2022<\/Date> ved <Health_Care_Unit>Helse Stavanger, Ruspoliklinikk ung Sandnes (RuPo Sandnes)<\/Health_Care_Unit> med hoveddiagnose S0005XA overfladisk fremmedlegeme i hodebunnen.\n\nVed innleggelse rapporterte pasienten moderat smerte, overfladisk pusting, full bevegelighet, høyt blodtrykk, tydelige tegn på dehydrering, lav kjerntemperatur, og regulær puls.\n\nBehandling og funn:\n\nBehandlingen krevde fjerning av det overfladiske fremmede legemet fra hodebunnen av pasienten. Pasienten reagerte positivt på behandlingen og smertene minket etter inngrepet.\n\nEtter utskrivelse:\n\nPasienten er oppfordret til å oppsøke lege dersom smerten returnerer eller forverres. Videre bør det tas tiltak for å forhindre dehydrering og overvåke blodtrykket.",
+    "id": 59,
+    "label": [
+      {
+        "start": 22,
+        "end": 28,
+        "text": "Snorre",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "text": "Skeie",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 128,
+        "end": 134,
+        "text": "Snorre",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 135,
+        "end": 140,
+        "text": "Skeie",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 142,
+        "end": 147,
+        "text": "73 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 165,
+        "end": 180,
+        "text": "12. januar 1950",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 183,
+        "end": 194,
+        "text": "Honningsvåg",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 213,
+        "end": 221,
+        "text": "49526415",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 241,
+        "end": 253,
+        "text": "634378 95192",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 308,
+        "end": 324,
+        "text": "7. desember 2022",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 329,
+        "end": 387,
+        "text": "Helse Stavanger, Ruspoliklinikk ung Sandnes (RuPo Sandnes)",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 60,
+    "created_at": "2023-08-15T13:22:38.945635Z",
+    "updated_at": "2023-08-15T13:22:38.945665Z",
+    "lead_time": 57.702
+  },
+  {
+    "text": "Utmerkelses notat:\n\nEn henvisning for  Hallstein   Netland ble innlagt med hoveddiagnosekoden \"S82251P Displaced comminuted fracture of shaft of right tibia\". Ved inntakstidspunktet hadde pasienten vanlig kroppstemperatur, moderat smerte, langsom pusting, regelmessig puls, noen tegn på dehydrering, høyt blodtrykk, redusert mobilitet.\n\nYtterligere informasjon inkluderer:\n- Pasienten er 24 år gammel. \n- Pasienten ble innlagt på Unilabs Røntgen Ski på 15. oktober 2015.\n- Pasienten ble født i Kaland den 19. april 1999.\n- Pasientens telefonnummer er 004776528979.\n- Pasientens folkeregistrert nummer er 257571 89055.\n\nVennligst kontakt  Hallstein   Netland for ytterligere undersøkelser eller behandling. \n\nVennlig hilsen,\n\n[SPECIALISTENS NAVN], [SPECIALISTENS TITTEL]",
+    "original_text": "Utmerkelses notat:\n\nEn henvisning for <First_Name> Hallstein <\/First_Name> <Last_Name> Netland<\/Last_Name> ble innlagt med hoveddiagnosekoden \"S82251P Displaced comminuted fracture of shaft of right tibia\". Ved inntakstidspunktet hadde pasienten vanlig kroppstemperatur, moderat smerte, langsom pusting, regelmessig puls, noen tegn på dehydrering, høyt blodtrykk, redusert mobilitet.\n\nYtterligere informasjon inkluderer:\n- Pasienten er <Age>24<\/Age> år gammel. \n- Pasienten ble innlagt på <Health_Care_Unit>Unilabs Røntgen Ski<\/Health_Care_Unit> på <Date>15. oktober 2015<\/Date>.\n- Pasienten ble født i <Location>Kaland<\/Location> den <Date>19. april 1999<\/Date>.\n- Pasientens telefonnummer er <Phone_Number>004776528979<\/Phone_Number>.\n- Pasientens folkeregistrert nummer er <Social_Security_Number>257571 89055<\/Social_Security_Number>.\n\nVennligst kontakt <First_Name> Hallstein <\/First_Name> <Last_Name> Netland<\/Last_Name> for ytterligere undersøkelser eller behandling. \n\nVennlig hilsen,\n\n[SPECIALISTENS NAVN], [SPECIALISTENS TITTEL]",
+    "id": 60,
+    "label": [
+      {
+        "start": 38,
+        "end": 48,
+        "text": " Hallstein",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 51,
+        "end": 58,
+        "text": "Netland",
+        "labels": [
+          "Last_Name"
+        ]
+      },
+      {
+        "start": 388,
+        "end": 393,
+        "text": "24 år",
+        "labels": [
+          "Age"
+        ]
+      },
+      {
+        "start": 430,
+        "end": 449,
+        "text": "Unilabs Røntgen Ski",
+        "labels": [
+          "Health_Care_Unit"
+        ]
+      },
+      {
+        "start": 453,
+        "end": 469,
+        "text": "15. oktober 2015",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 505,
+        "end": 519,
+        "text": "19. april 1999",
+        "labels": [
+          "Date"
+        ]
+      },
+      {
+        "start": 494,
+        "end": 500,
+        "text": "Kaland",
+        "labels": [
+          "Location"
+        ]
+      },
+      {
+        "start": 551,
+        "end": 563,
+        "text": "004776528979",
+        "labels": [
+          "Phone_Number"
+        ]
+      },
+      {
+        "start": 604,
+        "end": 616,
+        "text": "257571 89055",
+        "labels": [
+          "Social_Security_Number"
+        ]
+      },
+      {
+        "start": 638,
+        "end": 647,
+        "text": "Hallstein",
+        "labels": [
+          "First_Name"
+        ]
+      },
+      {
+        "start": 650,
+        "end": 657,
+        "text": "Netland",
+        "labels": [
+          "Last_Name"
+        ]
+      }
+    ],
+    "annotator": 1,
+    "annotation_id": 61,
+    "created_at": "2023-08-15T13:23:31.643164Z",
+    "updated_at": "2023-08-15T13:23:31.643212Z",
+    "lead_time": 51.342
+  }
+]
