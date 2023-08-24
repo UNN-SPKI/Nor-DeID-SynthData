@@ -18,11 +18,10 @@ class Arguments(Tap):
 
 def include(code: str, name: str) -> bool:
     logging.debug(f"Checking {code=}, {name=}")
-    # Exclude psychiatric codes
-    if code.startswith('F'):
-        return False
     
-    if code.startswith('Y'):
+    # We exclude mental and behavioral disorder codes,
+    # and codes which are primarily secondary:
+    if code[0] in ['F', 'Z', 'Y', 'U']:
         return False
     
     name_lowered = name.lower()
