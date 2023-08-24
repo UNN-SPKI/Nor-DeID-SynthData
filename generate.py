@@ -34,6 +34,8 @@ class Arguments(Tap):
     """Which OpenAI model to prompt"""
     locale: Literal['nb', 'en'] = 'nb'
     """Which language to fetch vocabularies from and generate summaries in"""
+    split: Literal['all', 'training', 'holdout'] = 'all'
+    """Which split of texts to draw samples from (see split-train-holdout.py)"""
     seed: int = 42
     """The seed for the random generator (note: must set --n the same to get same prompts)"""
     verbose: bool = False
@@ -97,7 +99,7 @@ def main(args: Arguments):
     
     
     logging.info(f"Creating {args.n} test cases.")
-    scenarios = create_scenarios(args.n, args.locale)
+    scenarios = create_scenarios(args.n, args.locale, args.split)
 
     logging.info("Formatting test cases as prompts.")
     prompts = [format_scenario(scenario) for scenario in scenarios]
@@ -179,14 +181,14 @@ def sample_findings(findings_source, n: int, locale: str) -> list[list[str]]:
         patient_findings.append(finding_list)
     return patient_findings
 
-def create_scenarios(n: int, locale: str) -> List[Scenario]:
-    document_types = sample_document_types('vocabularies/document_types.csv', 'en', args.locale, n)
-    given_names = sample_lines('vocabularies/nb_given_names.csv', n)
-    family_names = sample_lines('vocabularies/nb_family_names.csv', n)
-    cities = sample_lines('vocabularies/nb_cities.csv', n)
-    diagnoses = sample_with_replacement('vocabularies/en_diagnoses.csv', n)
+def create_scenarios(n: int, locale: str, split: str='all') -> List[Scenario]:
+    document_types = sample_document_types(os.path.join('vocabularies', 'document_types.csv'), 'en', locale, n)
+    given_names = sample_lines(os.path.join('vocabularies', split, 'nb_given_names.csv'), n)
+    family_names = sample_lines(os.path.join('vocabularies', split, 'nb_family_names.csv'), n)
+    cities = sample_lines(os.path.join('vocabularies', split, 'nb_cities.csv'), n)
+    diagnoses = sample_with_replacement(os.path.join('vocabularies', split, 'en_diagnoses.csv'), n)
     healthcare_units = sample_with_replacement(
-        'vocabularies/nb_healthcare_units.csv', n)
+        os.path.join('vocabularies', split, 'nb_healthcare_units.csv'), n)
     with open('vocabularies/en_findings.json', 'r') as findings_file:
         findings_source = json.load(findings_file)
 
