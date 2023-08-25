@@ -14,10 +14,15 @@ import datetime
 
 import dataclasses
 from typing import List, Literal, Tuple
+import joblib
 
 from tap import Tap
+from joblib import Memory
 import openai
 
+import utilities.tags
+
+CACHE_DIRECTORY = '.cache'
 OPENAI_PLACEHOLDER = 'OPENAI-KEY-HERE'
 SYSTEM_PROMPT = """
 Answer in the form of an annotated discharge note from a specialist. Include details about each finding.
@@ -36,6 +41,8 @@ class Arguments(Tap):
     """Which language to fetch vocabularies from and generate summaries in"""
     split: Literal['all', 'training', 'holdout'] = 'all'
     """Which split of texts to draw samples from (see split-train-holdout.py)"""
+    remove_titles: bool = False
+    """Apply heuristic to remove trivial cases (title followed by PHI)"""
     seed: int = 42
     """The seed for the random generator (note: must set --n the same to get same prompts)"""
     verbose: bool = False
@@ -105,14 +112,16 @@ def main(args: Arguments):
     prompts = [format_scenario(scenario) for scenario in scenarios]
 
     logging.info("Sending prompts to completion.")
-    completed_notes = [complete_note(prompt, args)
-                       for prompt in prompts]
+    memory = Memory(CACHE_DIRECTORY, verbose=0)
+    completed_notes = [complete_note(prompt, memory, args) for prompt in prompts]
+    if args.remove_titles:
+        cleaned_notes = [clean_answer(note) for note in completed_notes]
     
     logging.info(f"Writing results to {args.output}")
     
     with open(args.output, 'w', encoding='utf8') as result_file:
         args.openAIKey = OPENAI_PLACEHOLDER
-        results = {'parameters': args.as_dict(), 'scenarios': [dataclasses.asdict(s) for s in scenarios], 'prompts': prompts, 'results': completed_notes}
+        results = {'parameters': args.as_dict(), 'scenarios': [dataclasses.asdict(s) for s in scenarios], 'prompts': prompts, 'results': completed_notes, 'cleaned_results': cleaned_notes}
         json.dump(results, result_file)
 
 
@@ -260,23 +269,48 @@ Do not add any other tags.
 
 """
 
+def clean_answer(answer: str):
+    """clean_answer attempts to remove trivial PHI cases from the dataset
+    (of the title-PHI form e.g. "Phone Number: 555-12345")"""
+    lines = answer.split('\n')
+    cleaned = []
+    for line in lines:
+        if ':' not in line:
+            cleaned.append(line)
+            continue
 
-def complete_note(prompt: str, args: Arguments) -> str:
+        title, content = line.split(':', maxsplit=1)
+        words_in_title = len(title.split())
+        non_phi_content = utilities.tags.destroy_tags(content).strip()
+        if words_in_title <= 3 and len(non_phi_content) == 0 and len(content.strip()) > 0:
+            logging.debug(f"Line {line} looks like a trivial example, removing it.")
+        else:
+            cleaned.append(line)
+    return '\n'.join(cleaned)
+
+
+def complete_note(prompt: str, memory: joblib.Memory, args: Arguments) -> str:
     if args.dryRun:
         return ""
 
     if os.getenv('OPENAI_API_KEY') is None:
         openai.api_key = args.openAIKey
 
+    get_answer = memory.cache(_complete, verbose=0)
+    answer = get_answer(prompt, args.model, args.max_tokens, args.temperature, args.topP)
+    return answer
+
+def _complete(prompt: str, model: str, max_tokens: int, temperature: float, topP: float):
     completion = openai.ChatCompletion.create(
-        model=args.model,
+        model=model,
         messages=[
             {'role': 'system', 'content': SYSTEM_PROMPT},
             {'role': 'user', 'content': prompt}
             ],
-        max_tokens=args.max_tokens,
-        temperature=args.temperature,
-        top_p=args.topP)
+        max_tokens=max_tokens,
+        temperature=temperature,
+        top_p=topP,
+        )
     answer = completion.choices[0].message.content
     return answer
 

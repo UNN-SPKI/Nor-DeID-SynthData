@@ -12,6 +12,10 @@ def remove_tags(task: str) -> str:
     replacing them with their contents."""
     return _ENCLOSED_IN_TAGS.sub(r'\2', task)
 
+def destroy_tags(task: str) -> str:
+    """destroy_tags removes all inline tags from a text, including their contents."""
+    return _ENCLOSED_IN_TAGS.sub('', task)
+
 def redact_tags(task: str) -> str:
     """redact_tags replaces simple XML tags from text,
     replacing them with the tag name."""
