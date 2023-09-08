@@ -55,6 +55,8 @@ class Arguments(Tap):
     """Top-p for model sampling"""
     max_tokens: int = 1024
     """The upper bound on tokens to output for each document"""
+    withReplacement: bool = False
+    """Whether we sample with replacement for the larger sets (names, cities)"""
 
 @dataclasses.dataclass
 class Scenario:
@@ -114,8 +116,8 @@ def main(args: Arguments):
     logging.info("Sending prompts to completion.")
     memory = Memory(CACHE_DIRECTORY, verbose=0)
     completed_notes = [complete_note(prompt, memory, args) for prompt in prompts]
-    if args.remove_titles:
-        cleaned_notes = [clean_answer(note) for note in completed_notes]
+
+    cleaned_notes = [clean_answer(note) for note in completed_notes]
     
     logging.info(f"Writing results to {args.output}")
     
@@ -192,9 +194,14 @@ def sample_findings(findings_source, n: int, locale: str) -> list[list[str]]:
 
 def create_scenarios(n: int, locale: str, split: str='all') -> List[Scenario]:
     document_types = sample_document_types(os.path.join('vocabularies', 'document_types.csv'), 'en', locale, n)
-    given_names = sample_lines(os.path.join('vocabularies', split, 'nb_given_names.csv'), n)
-    family_names = sample_lines(os.path.join('vocabularies', split, 'nb_family_names.csv'), n)
-    cities = sample_lines(os.path.join('vocabularies', split, 'nb_cities.csv'), n)
+    if args.withReplacement:
+        given_names = sample_with_replacement(os.path.join('vocabularies', split, 'nb_given_names.csv'), n)
+        family_names = sample_with_replacement(os.path.join('vocabularies', split, 'nb_family_names.csv'), n)
+        cities = sample_with_replacement(os.path.join('vocabularies', split, 'nb_cities.csv'), n)
+    else: 
+        given_names = sample_lines(os.path.join('vocabularies', split, 'nb_given_names.csv'), n)
+        family_names = sample_lines(os.path.join('vocabularies', split, 'nb_family_names.csv'), n)
+        cities = sample_lines(os.path.join('vocabularies', split, 'nb_cities.csv'), n)
     diagnoses = sample_with_replacement(os.path.join('vocabularies', split, 'en_diagnoses.csv'), n)
     healthcare_units = sample_with_replacement(
         os.path.join('vocabularies', split, 'nb_healthcare_units.csv'), n)

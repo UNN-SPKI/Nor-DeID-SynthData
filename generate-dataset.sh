@@ -1,0 +1,3 @@
+pipenv run python generate.py --split training --openAIKey OPENAI_KEY_HERE --model gpt-4 --n 1000 --seed 96 --verbose --output dataset/training.json --withReplacement
+pipenv run python generate.py --split training --openAIKey OPENAI_KEY_HERE --model gpt-4 --n 100 --seed 97 --verbose --output dataset/validation.json
+pipenv run python generate.py --split holdout --openAIKey OPENAI_KEY_HERE --model gpt-4 --n 100 --seed 98 --verbose --output dataset/holdout.json
