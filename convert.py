@@ -73,7 +73,6 @@ def create_spacy(source, section_name, output_path: pathlib.Path, args: Argument
         ents = [
             doc.char_span(a[0], a[1], a[2], alignment_mode='expand') for a in annotations
         ]
-        print(ents)
         doc.set_ents(ents)
         doc_bin.add(doc)
     doc_bin.to_disk(output_path)
