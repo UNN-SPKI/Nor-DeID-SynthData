@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
+import re
 import pathlib
 import json
 from typing import Literal
 from tap import Tap
 
 import utilities.tags
+
+def fix_orthography(answer: str) -> str:
+    """fix_orthography adds spaces between punctuation and
+    reduces whitespace to single spaces to align a text
+    with the punctuation in CoNLL format."""
+    space_punctuation = re.sub('\s*([,.])\s+', r' \1 ', answer).rstrip()
+    single_spaces = re.sub('\s+', ' ', space_punctuation)
+    return single_spaces
 
 class Arguments(Tap):
     input: pathlib.Path = 'results.json'
@@ -67,8 +76,9 @@ def create_spacy(source, section_name, output_path: pathlib.Path, args: Argument
     doc_bin = spacy.tokens.DocBin()
     nlp = spacy.load('nb_core_news_sm')
     for r in results:
-        doc_text = utilities.tags.remove_tags(r).replace('\n', ' ')
-        annotations = utilities.tags.list_annotations(r, EXPECTED_TAGS)
+        cleaned = fix_orthography(r)
+        doc_text = utilities.tags.remove_tags(cleaned)
+        annotations = utilities.tags.list_annotations(cleaned, EXPECTED_TAGS)
         doc = nlp.make_doc(doc_text)
         ents = [
             doc.char_span(a[0], a[1], a[2], alignment_mode='expand') for a in annotations
