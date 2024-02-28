@@ -1,6 +1,6 @@
 # Nor-DeID-SynthData
 
-Synthetic discharge summaries in English and Norwegian for comparing deidentification methods 
+Synthetic discharge summaries in Norwegian for comparing deidentification methods 
 
 ## Setup
 
